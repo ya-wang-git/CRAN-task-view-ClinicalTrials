@@ -30,7 +30,9 @@ repository linked above.
     be implemented. Reference: Vandemeulebroecke, An investigation of
     two-stage tests, Statistica Sinica 2006.
     
--   `r pkg("adaptr")` provides methods to evaluate the performance characteristics of various point and interval estimators for optimal adaptive two-stage designs. Specifically, this package is written to work with trial designs created by the 'adoptr' package (Kunzmann et al. (2021) <doi:10.18637/jss.v098.i09>; Pilz et al. (2021) <doi:10.1002/sim.8953>)). Apart from the a priori evaluation of performance characteristics, this package also allows for the evaluation of the implemented estimators on real datasets, and it implements methods to calculate p-values.
+-   `r pkg("adestr")` provides methods to evaluate the performance characteristics of various point and interval estimators for optimal adaptive two-stage designs. Specifically, this package is written to work with trial designs created by the 'adoptr' package (Kunzmann et al. (2021) <doi:10.18637/jss.v098.i09>; Pilz et al. (2021) <doi:10.1002/sim.8953>)). Apart from the a priori evaluation of performance characteristics, this package also allows for the evaluation of the implemented estimators on real datasets, and it implements methods to calculate p-values.
+
+-   `r pkg("adpss")` provides the functions for planning and conducting a clinical trial with adaptive sample size determination. Maximal statistical efficiency will be exploited even when dramatic or multiple adaptations are made. Such a trial consists of adaptive determination of sample size at an interim analysis and implementation of frequentist statistical test at the interim and final analysis with a prefixed significance level. The required assumptions for the stage-wise test statistics are independent and stationary increments and normality. Predetermination of adaptation rule is not required.
 
 -   `r pkg("AGSDest")` provides tools  and functions for parameter estimation in adaptive group sequential trials.
 
@@ -134,7 +136,7 @@ repository linked above.
     . It calculates the next dose as a clinical trial proceeds as well
     as performs simulations to obtain operating characteristics.    
     
--   `r pkg("OncoBayes")` Bayesian Logistic Regression for Oncology Dose-Escalation Trials.
+-   `r pkg("OncoBayes2")` Bayesian Logistic Regression for Oncology Dose-Escalation Trials.
 
 -   `r pkg("UnifiedDoseFinding")` In many phase I trials,
     the design goal is to find the dose associated with a certain target
@@ -397,7 +399,7 @@ repository linked above.
     adjustments for either nonadherence or variability that comes from
     using data to estimate parameters.
     
--   Package `r pkg("ThreeArmedTrials")` Design and analyze
+-   `r pkg("ThreeArmedTrials")` Design and analyze
     three-arm non-inferiority or superiority trials which follow a
     gold-standard design, i.e. trials with an experimental treatment, an
     active, and a placebo control.
@@ -670,6 +672,8 @@ repository linked above.
 -   `r pkg("asd", priority = "core")` runs simulations for adaptive seamless designs with and without early outcomes for treatment selection and subpopulation type designs. It allows sample size modification in subpopulation selection.
 
 -   `r pkg("esDesign")` is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) <doi:10.1016/j.cct.2020.106216>. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR) and AED3-SSR (or ES3-SSR). In addition, this package also contains several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) <doi:10.1177/1740774513503739>, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995), and some useful functions. In details, we can calculate the futility and/or efficacy stopping boundaries, the sample size required, calibrate the value of the threshold of the difference between subgroup-specific test statistics, conduct the simulation studies in AED, SSR, AED1-SSR, AED2-SSR and AED3-SSR.
+
+-   `r pkg("monitOS")` Monitoring Overall Survival in Pivotal Trials in Indolent Cancers.
 
 -   `r pkg("rpact", priority = "core")` Design and analysis of confirmatory
     adaptive clinical trials with continuous, binary, and survival
