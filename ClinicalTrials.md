@@ -40,6 +40,8 @@ repository linked above.
 
 -   `r pkg("ASSISTant")` Clinical trial design for subgroup selection in three-stage group sequential trial as described in Lai, Lavori and Liao (2014, <doi:10.1016/j.cct.2014.09.001>). Includes facilities for design, exploration and analysis of such trials. An implementation of the initial DEFUSE-3 trial is also provided as a vignette.
 
+-   `r pkg("BATSS")` Defines operating characteristics of Bayesian Adaptive Trials considering a generalised linear model response via Monte Carlo simulations of Bayesian GLM fitted via integrated Laplace approximations (INLA).
+  
 -   `r pkg("BayesCT")` Simulation and analysis of Bayesian adaptive clinical trials for binomial, Gaussian, and time-to-event data types, incorporates historical data and allows early stopping for futility or early success. The package uses novel and efficient Monte Carlo methods for estimating Bayesian posterior probabilities, evaluation of loss to follow up, and imputation of incomplete data. The package has the functionality for dynamically incorporating historical data into the analysis via the power prior or non-informative priors.
 
 -   `r pkg("BDP2")` Tools and workflow to choose design parameters in Bayesian adaptive single-arm phase II trial designs with binary endpoint (response, success) with possible stopping for efficacy and futility at interim analyses. Also contains routines to determine and visualize operating characteristics. See Kopp-Schneider et al. (2018) <doi:10.1002/bimj.201700209>. 
@@ -75,6 +77,8 @@ repository linked above.
 #### *Bioequivalence*
 
 -   `r pkg("adaptIVPT")` contains functions carrying out adaptive procedures using mixed scaling approach to establish bioequivalence for in-vitro permeation test (IVPT) data. Currently, the package provides procedures based on parallel replicate design and balanced data, according to the U.S. Food and Drug Administration's "Draft Guidance on Acyclovir" <https://www.accessdata.fda.gov/drugsatfda_docs/psg/Acyclovir_topical%20cream_RLD%2021478_RV12-16.pdf>. Potvin et al. (2008) <doi:10.1002/pst.294> provides the basis for our adaptive design (see Method B). For a comprehensive overview of the method, refer to Lim et al. (2023) <doi:10.1002/pst.2333>. This package reflects the views of the authors and should not be construed to represent the views or policies of the U.S. Food and Drug Administration.
+
+-   `r pkg("PK")` contains methods to estimate PK parameters using non-compartmental theory and provides facilities to obtain confidence intervals and perform tests for single analysis as well as bioequivalence studies.
 
 -   `r pkg("PowerTOST", priority = "core")` contains
     functions to calculate power and sample size for various study
