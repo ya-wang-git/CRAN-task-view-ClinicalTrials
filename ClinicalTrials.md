@@ -8,7 +8,19 @@ source: https://github.com/cran-task-views/ClinicalTrials/
 ---
 
 
-This task view provides an overview of R packages relevant to the design, monitoring, and analysis of clinical trial data. It highlights packages for key topics in clinical trial design, including adaptive designs, dose-finding strategies, group sequential designs, randomization, sample size calculation, and simulation. Additionally, it covers commonly used analysis method in clinical trials, such as longitudinal data analysis, survival analysis, meta-analysis, and missing data imputation. Please refer to task views `r view("ExperimentalDesign")`, `r view("Survival")`, `r view("Meta-analysis")` for more details on these topics.
+### Get Started
+
+This task view provides an overview of R packages relevant to the design, monitoring, and analysis of clinical trial data. 
+
+Packages are grouped in the following categories:
+
+-	[**Design**](#design): tools to support a variety of clinical trial designs. The packages are further categorized into subgroups, such as [*adaptive designs*](#adaptive-designs), [*bioequivalence study designs*](#bioequivalence), [*dose-finding designs*](#dose-finding), [*factorial designs*](#factorial-designs), [*group sequential designs*](#group-sequential-designs), [*randomization*](#randomization), [*response adaptive randomization*](#response-adaptive-randomization), [*sample size and power calculations*](#sample-size-and-power-calculations), and [*simulation*](#simulation) for clinical trial designs.
+
+-	[**Monitoring**](#monitoring): tools dedicated to monitoring of clinical trials, such as computing the probability of crossing sequential boundaries along its interim analyses, sample size re-estimation, etc.
+
+-	[**Analysis**](#analysis): tools for implementing commonly used analysis method in clinical trials. The packages are further categorized into subgroups, such as [*general analysis*](#general-analysis), [*longitudinal data analysis*](#longitudinal-data-analysis), [*survival analysis*](#survival-analysis), [*meta-analysis*](#meta-analysis), [*missing data imputation*](#missing-data-imputation), as well as [*analysis for specific designs*](#other-analysis-for-specific-designs).
+
+Packages are deemed in scope if they provide tools to support the design, monitoring and analysis of clinical trials. Please refer to task views `r view("ExperimentalDesign")`, `r view("Survival")`, `r view("Meta-analysis")` for more details on these topics.
 
 Contributions are always welcome and encouraged. You can contribute by emailing the
 maintainer directly or by submitting an issue or pull request in the GitHub
@@ -49,6 +61,10 @@ repository linked above.
 -   `r pkg("esDesign")` is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) <doi:10.1016/j.cct.2020.106216>. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR) and AED3-SSR (or ES3-SSR). In addition, this package also contains several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) <doi:10.1177/1740774513503739>, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995), and some useful functions. In details, we can calculate the futility and/or efficacy stopping boundaries, the sample size required, calibrate the value of the threshold of the difference between subgroup-specific test statistics, conduct the simulation studies in AED, SSR, AED1-SSR, AED2-SSR and AED3-SSR.
 
 -   `r pkg("eselect")` Endpoint selection and sample size reassessment for multiple binary endpoints based on blinded and/or unblinded data. Trial design that allows an adaptive modification of the primary endpoint based on blinded information obtained at an interim analysis. The decision rule chooses the endpoint with the lower estimated required sample size. Additionally, the sample size is reassessed using the estimated event probabilities and correlation between endpoints. The implemented design is proposed in Bofill Roig, M., Gómez Melis, G., Posch, M., and Koenig, F. (2022). <doi:10.48550/arXiv.2206.09639>.
+
+-   `r pkg("gMCP")` provides functions and a graphical user interface for graphical described multiple test procedures.
+
+-   `r pkg("graphicalMCP")` is a low-dependency implementation of graphical MCPs which allow mixed types of tests. It also includes power simulations and visualization of graphical MCPs.
 
 -   `r pkg("gsMAMS")` It provides functions to generate operating characteristics and to calculate Sequential Conditional Probability Ratio Tests(SCPRT) efficacy and futility boundary values along with sample/event size of Multi-Arm Multi-Stage(MAMS) trials for different outcomes. The package is based on Jianrong Wu, Yimei Li, Liang Zhu (2023) <doi:10.1002/sim.9682>, Jianrong Wu, Yimei Li (2023) "Group Sequential Multi-Arm Multi-Stage Survival Trial Design with Treatment Selection"(Manuscript accepted for publication) and Jianrong Wu, Yimei Li, Shengping Yang (2023) "Group Sequential Multi-Arm Multi-Stage Trial Design with Ordinal Endpoints"(In preparation). 
 
@@ -256,10 +272,6 @@ repository linked above.
 #### *Group Sequential Designs*
 
 -   `r pkg("AGSDest")` provides tools and functions for parameter estimation in adaptive group sequential trials.
-
--   `r pkg("ldbounds", priority = "core")` uses Lan-DeMets
-    Method for group sequential trial; its functions calculate bounds
-    and probabilities of a group sequential trial.
     
 -   `r pkg("clinfun", priority = "core")` has
     functions for both design and analysis of clinical trials. For phase
@@ -273,6 +285,14 @@ repository linked above.
     group sequential designs.    
     
 -   `r pkg("GroupSeq")` computes probabilities related to group sequential designs for normally distributed test statistics. Enables to derive critical boundaries, power, drift, and confidence intervals of such designs. Supports the alpha spending approach by Lan-DeMets (1994) <doi:10.1002/sim.4780131308>.  
+
+-   `r pkg("gsDesign")` derives group sequential clinical trial designs and describes their properties. Particular focus on time-to-event, binary, and continuous outcomes. Largely based on methods described in Jennison, Christopher and Turnbull, Bruce W., 2000, "Group Sequential Methods with Applications to Clinical Trials" (ISBN: 0-8493-0316-8).
+
+-   `r pkg("ldbounds", priority = "core")` uses Lan-DeMets
+    Method for group sequential trial; its functions calculate bounds
+    and probabilities of a group sequential trial.
+
+-   `r pkg("lrstat")` performs power and sample size calculation for non-proportional hazards model using the Fleming-Harrington family of weighted log-rank tests. The package can also be used for continuous, binary, and count data. For continuous data, it can handle missing data through mixed-model for repeated measures (MMRM). In crossover designs, it can estimate direct treatment effects while accounting for carryover effects. For binary data, it can design Simon's 2-stage, modified toxicity probability-2 (mTPI-2), and Bayesian optimal interval (BOIN) trials. For count data, it can design group sequential trials for negative binomial endpoints with censoring. Additionally, it facilitates group sequential equivalence trials for all supported data types. Moreover, it can design adaptive group sequential trials for changes in sample size, error spending function, number and spacing or future looks. Finally, it offers various options for adjusted p-values, including graphical and gatekeeping procedures.
 
 -   `r pkg("rpact", priority = "core")` Design and analysis of confirmatory
     adaptive clinical trials with continuous, binary, and survival
@@ -364,6 +384,8 @@ repository linked above.
 -   `r pkg("longpower", priority = "core")`Compute power and sample size 
     for linear models of longitudinal data. The package is described in 
     Iddi and Donohue (2022) <doi:10.32614/RJ-2022-022>. 
+    
+-   `r pkg("lrstat")` performs power and sample size calculation for non-proportional hazards model using the Fleming-Harrington family of weighted log-rank tests. The package can also be used for continuous, binary, and count data. For continuous data, it can handle missing data through mixed-model for repeated measures (MMRM). In crossover designs, it can estimate direct treatment effects while accounting for carryover effects. For binary data, it can design Simon's 2-stage, modified toxicity probability-2 (mTPI-2), and Bayesian optimal interval (BOIN) trials. For count data, it can design group sequential trials for negative binomial endpoints with censoring. Additionally, it facilitates group sequential equivalence trials for all supported data types. Moreover, it can design adaptive group sequential trials for changes in sample size, error spending function, number and spacing or future looks. Finally, it offers various options for adjusted p-values, including graphical and gatekeeping procedures.
     
 -   `r pkg("PowerTOST", priority = "core")` contains
     functions to calculate power and sample size for various study
@@ -465,8 +487,6 @@ repository linked above.
     [doi:10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9](https://dx.doi.org/10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9)
     . It calculates the next dose as a clinical trial proceeds as well
     as performs simulations to obtain operating characteristics. 
-    
--   `r pkg("graphicalMCP")` is a low-dependency implementation of graphical MCPs which allow mixed types of tests. It also includes power simulations and visualization of graphical MCPs.
 
 -   `r pkg("Mediana")` Provides a general framework for
     clinical trial simulations based on the Clinical Scenario Evaluation
@@ -679,6 +699,8 @@ repository linked above.
 
 -   `r pkg("monitOS")` Monitoring Overall Survival in Pivotal Trials in Indolent Cancers.
 
+-   `r pkg("PwrGSD")` provides tools for the evaluation of interim analysis plans for sequentially monitored trials on a survival endpoint; tools to construct efficacy and futility boundaries, for deriving power of a sequential design at a specified alternative, template for evaluating the performance of candidate plans at a set of time varying alternatives.
+
 -   `r pkg("rpact", priority = "core")` Design and analysis of confirmatory
     adaptive clinical trials with continuous, binary, and survival
     endpoints according to the methods described in the monograph by
@@ -687,6 +709,8 @@ repository linked above.
     based on the combination testing principle.
 
 -   `r pkg("SAME")` Design a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation. James M S Wason, Jean E Abraham, Richard D Baird, Ioannis Gournaris, Anne-Laure Vallier, James D Brenton, Helena M Earl, Adrian P Mander (2015) <doi:10.1038/bjc.2015.278>. Guosheng Yin, Nan Chen, J. Jack Lee (2018) <doi:10.1007/s12561-017-9199-7>. Ying Yuan, Beibei Guo, Mark Munsell, Karen Lu, Amir Jazaeri (2016) <doi:10.1002/sim.6971>.
+
+-   `r pkg("seqmon")` provides sequential monitoring of clinical trials. It calculates the efficacy and futility boundaries at each look. It allows modifying the design and tracking the design update history.
 
 
 ### Links
