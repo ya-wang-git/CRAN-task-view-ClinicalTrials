@@ -20,7 +20,12 @@ Packages are grouped in the following categories:
 
 -	[**Analysis**](#analysis): tools for implementing commonly used analysis method in clinical trials. The packages are further categorized into subgroups, such as [*general analysis*](#general-analysis), [*longitudinal data analysis*](#longitudinal-data-analysis), [*survival analysis*](#survival-analysis), [*meta-analysis*](#meta-analysis), [*missing data imputation*](#missing-data-imputation), as well as [*analysis for specific designs*](#other-analysis-for-specific-designs).
 
-Packages are deemed in scope if they provide tools to support the design, monitoring and analysis of clinical trials. Please refer to task views `r view("ExperimentalDesign")`, `r view("Survival")`, `r view("Meta-analysis")` for more details on these topics.
+Here are several foundational books on clinical trial design and analysis that can help users gain a deeper understanding of the methods implemented in the relevant R packages: [Clinical Trials: A Practical Approach](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118793916), [Fundamentals of Clinical Trials](https://link.springer.com/book/10.1007/978-3-319-18539-2), [Sample Sizes for Clinical Trials](https://www.routledge.com/Sample-Sizes-for-Clinical-Trials/Julious/p/book/9781138587892?srsltid=AfmBOopllJ4lcXrd-J6q76oPSQl3Zae-X7LqAYmh1zbt_BY7_0ZD0gN0), [Group Sequential and Confirmatory Adaptive Designs in Clinical Trials](https://link.springer.com/book/10.1007/978-3-319-32562-0), [Bayesian Adaptive Methods for Clinical Trials](https://www.routledge.com/Bayesian-Adaptive-Methods-for-Clinical-Trials/Berry-Carlin-Lee-Muller/p/book/9781032922058?srsltid=AfmBOopPzoSaPFpQT8vTUc6WmJpn4_sNSQZQntvryGtRPPM6IgySOh7F).
+
+
+### Inclusion Criteria
+
+Packages are deemed in scope if they provide tools to support the design, monitoring and analysis of clinical trials. Please refer to task views `r view("ExperimentalDesign")`, `r view("Survival")`, `r view("Meta-analysis")` for a more comprehensive list of R packages related to these topics.
 
 Contributions are always welcome and encouraged. You can contribute by emailing the
 maintainer directly or by submitting an issue or pull request in the GitHub
