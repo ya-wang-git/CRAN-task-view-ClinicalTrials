@@ -210,7 +210,12 @@ repository linked above.
     calculating optimal designs and an implementation of the
     `r pkg("MCPMod")` methodology. Currently only normally
     distributed homoscedastic endpoints are supported.
-    
+
+
+-   `r pkg("pocrm")` implements functions to implement and simulate the partial order continual reassessment method (PO-CRM) for use in Phase I trials of combinations of agents.
+
+-   `r pkg("escalation")` Implements a range of different approaches for dose-finding clinical trials including the continual reassessment method (CRM), the modified TPI (mTPI) design, the Bayesian optimal interval design (BOIN), EffTox and the 3+3 design.
+
 -   `r pkg("MCPMod")` This package implements a methodology
     for the design and analysis of dose-response studies that combines
     aspects of multiple comparison procedures and modeling approaches
