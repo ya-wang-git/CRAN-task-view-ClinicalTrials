@@ -62,6 +62,10 @@ repository linked above.
 
 -   `r pkg("BDP2")` Tools and workflow to choose design parameters in Bayesian adaptive single-arm phase II trial designs with binary endpoint (response, success) with possible stopping for efficacy and futility at interim analyses. Also contains routines to determine and visualize operating characteristics. See Kopp-Schneider et al. (2018) <doi:10.1002/bimj.201700209>. 
 
+-   `r pkg("Cats")` simulates a cohort platform trial design whereby every cohort consists of two arms (control and experimental treatment). Co-primary binary endpoints are used, and decisions at the interim or final analysis are made using either Bayesian or frequentist decision rules. Several options for sharing control data across cohorts are implemented. Realistic trial trajectories are simulated, and the operating characteristics of the designs are calculated. This package was used to derive the simulation results in Meyer et al. (2023) <doi:10.1371/journal.pone.0281674>.
+
+-   `r pkg("CohortPlat")` facilitates the simulation of cohort platform trials with binary endpoints, where each cohort consists of a combination treatment, the respective monotherapies, and control. Bayesian decision rules are used at the interim analysis (early futility or efficacy based on a surrogate endpoint) and at the final analysis to declare the combination therapy successful or futile. Sharing of the control and the backbone monotherapy data across cohorts is possible. The package offers extensive flexibility with respect to both platform trial trajectories, as well as treatment effect scenarios, and decision rules. This package was used to derive the simulation results in Meyer et al. (2022) <doi:10.1002/pst.2194>.
+
 -   `r pkg("esDesign")` is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) <doi:10.1016/j.cct.2020.106216>. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR) and AED3-SSR (or ES3-SSR). In addition, this package also contains several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) <doi:10.1177/1740774513503739>, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995), and some useful functions. In details, we can calculate the futility and/or efficacy stopping boundaries, the sample size required, calibrate the value of the threshold of the difference between subgroup-specific test statistics, conduct the simulation studies in AED, SSR, AED1-SSR, AED2-SSR and AED3-SSR.
 
 -   `r pkg("eselect")` Endpoint selection and sample size reassessment for multiple binary endpoints based on blinded and/or unblinded data. Trial design that allows an adaptive modification of the primary endpoint based on blinded information obtained at an interim analysis. The decision rule chooses the endpoint with the lower estimated required sample size. Additionally, the sample size is reassessed using the estimated event probabilities and correlation between endpoints. The implemented design is proposed in Bofill Roig, M., GC3mez Melis, G., Posch, M., and Koenig, F. (2022). <doi:10.48550/arXiv.2206.09639>.
@@ -84,6 +88,8 @@ repository linked above.
     chance of exposing them to subtherapeutic or overly toxic doses. It
     is used to design single-agent trials.
 
+-   `r pkg("NCC")`is an R package that allows users to simulate platform trials and perform treatment–control comparisons using non-concurrent control data (Krotka et al. (2023) <doi:10.1016/j.softx.2023.101437>). The package supports simulation of complex platform trial designs with continuous or binary endpoints and a flexible number of treatment arms that enter the trial at different time points. The software accommodates different treatment effects among the arms and includes several patterns for time trends. Analytic approaches currently implemented in the package cover frequentist modes (e.g., regression model adjusting for time as a fixed effect mixed model adjusting for time as a random factor, and regression splines), the Bayesian time machine a meta-analytic predictive prior separate analysis, and pooled analysis.
+
 -   `r pkg("rpact", priority = "core")` Design and analysis of confirmatory
     adaptive clinical trials with continuous, binary, and survival
     endpoints according to the methods described in the monograph by
@@ -93,6 +99,7 @@ repository linked above.
 
 -   `r pkg("SAME")` Design a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation. James M S Wason, Jean E Abraham, Richard D Baird, Ioannis Gournaris, Anne-Laure Vallier, James D Brenton, Helena M Earl, Adrian P Mander (2015) <doi:10.1038/bjc.2015.278>. Guosheng Yin, Nan Chen, J. Jack Lee (2018) <doi:10.1007/s12561-017-9199-7>. Ying Yuan, Beibei Guo, Mark Munsell, Karen Lu, Amir Jazaeri (2016) <doi:10.1002/sim.6971>.
 
+-   `r pkg("SIMPLE")` is a modular R package to simulate clinical trials and was developed to solve the problem of poor shareability and re-usability of existing software code in future projects (Meyer et al. (2023) <doi:10.1016/j.softx.2023.101515>). In `r pkg("SIMPLE")`, different aspects of the simulation (e.g., participant recruitment, analysis strategies, and the inclusion and exclusion of further interventions into the platform) are governed by partially independent and re-usable “modules”. Due to its architecture, `r pkg("SIMPLE")` can be used as a backbone from which to create highly complex designs that are accessible to users with very limited R skills, while more advanced users can nearly infinitely tweak the designs.
 
 #### *Bioequivalence*
 
@@ -459,6 +466,10 @@ repository linked above.
     enter outcomes after each cohort has been recruited, or via
     simulation to assess operating characteristics.
     
+-   `r pkg("Cats")` simulates a cohort platform trial design whereby every cohort consists of two arms (control and experimental treatment). Co-primary binary endpoints are used, and decisions at the interim or final analysis are made using either Bayesian or frequentist decision rules. Several options for sharing control data across cohorts are implemented. Realistic trial trajectories are simulated, and the operating characteristics of the designs are calculated. This package was used to derive the simulation results in Meyer et al. (2023) <doi:10.1371/journal.pone.0281674>.
+    
+-   `r pkg("CohortPlat")` facilitates the simulation of cohort platform trials with binary endpoints, where each cohort consists of a combination treatment, the respective monotherapies, and control. Bayesian decision rules are used at the interim analysis (early futility or efficacy based on a surrogate endpoint) and at the final analysis to declare the combination therapy successful or futile. Sharing of the control and the backbone monotherapy data across cohorts is possible. The package offers extensive flexibility with respect to both platform trial trajectories, as well as treatment effect scenarios, and decision rules. This package was used to derive the simulation results in Meyer et al. (2022) <doi:10.1002/pst.2194>. 
+    
 -   `r pkg("dfped")` A unified method for designing
     and analysing dose-finding trials in paediatrics, while bridging
     information from adults, is proposed in the dfped package. The dose
@@ -505,6 +516,8 @@ repository linked above.
     based on combinations of different endpoints), analysis strategies
     and commonly used evaluation criteria.
 
+-   `r pkg("NCC")`is an R package that allows users to simulate platform trials and perform treatment–control comparisons using non-concurrent control data (Krotka et al. (2023) <doi:10.1016/j.softx.2023.101437>). The package supports simulation of complex platform trial designs with continuous or binary endpoints and a flexible number of treatment arms that enter the trial at different time points. The software accommodates different treatment effects among the arms and includes several patterns for time trends. Analytic approaches currently implemented in the package cover frequentist modes (e.g., regression model adjusting for time as a fixed effect mixed model adjusting for time as a random factor, and regression splines), the Bayesian time machine a meta-analytic predictive prior separate analysis, and pooled analysis.
+
 -   `r pkg("RABR")` conduct simulations of the Response Adaptive Block Randomization (RABR) design to evaluate its type I error rate, power and operating characteristics for binary and continuous endpoints. For more details of the proposed method, please refer to Zhan et al. (2021) <doi:10.1002/sim.9104>.
 
 -   `r pkg("rpact", priority = "core")` Design and analysis of confirmatory
@@ -519,6 +532,8 @@ repository linked above.
     to three level of nesting. Power simulations that are flexible
     allowing the specification of missing data, unbalanced designs, and
     different random error distributions are built into the package.
+    
+-   `r pkg("SIMPLE")` is a modular R package to simulate clinical trials and was developed to solve the problem of poor shareability and re-usability of existing software code in future projects (Meyer et al. (2023) <doi:10.1016/j.softx.2023.101515>). In `r pkg("SIMPLE")`, different aspects of the simulation (e.g., participant recruitment, analysis strategies, and the inclusion and exclusion of further interventions into the platform) are governed by partially independent and re-usable “modules”. Due to its architecture, `r pkg("SIMPLE")` can be used as a backbone from which to create highly complex designs that are accessible to users with very limited R skills, while more advanced users can nearly infinitely tweak the designs.
 
 -   `r pkg("UnifiedDoseFinding")` In many phase I trials,
     the design goal is to find the dose associated with a certain target
