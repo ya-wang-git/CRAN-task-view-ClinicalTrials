@@ -456,6 +456,8 @@ repository linked above.
 
 -   `r pkg("adaptDiag")` simulate clinical trials for diagnostic test devices and evaluate the operating characteristics under an adaptive design with futility assessment determined via the posterior predictive probabilities.
 
+-   `r pkg("airship")`is an R package that contains an R Shiny App designed to plot simulation results of clinical trials. Its main feature is allowing users to simultaneously investigate the impact of several simulation input dimensions through dynamic filtering of the simulation results. A more detailed description of the core app can be found in Meyer et al. (2023) <doi:10.1016/j.softx.2023.101347>.
+
 -   `r pkg("asd", priority = "core")` runs simulations for adaptive seamless designs with and without early outcomes for treatment selection and subpopulation type designs. It allows sample size modification in subpopulation selection.
 
 -   `r pkg("BayesCT")` Simulation and analysis of Bayesian adaptive clinical trials for binomial, Gaussian, and time-to-event data types, incorporates historical data and allows early stopping for futility or early success. The package uses novel and efficient Monte Carlo methods for estimating Bayesian posterior probabilities, evaluation of loss to follow up, and imputation of incomplete data. The package has the functionality for dynamically incorporating historical data into the analysis via the power prior or non-informative priors.
