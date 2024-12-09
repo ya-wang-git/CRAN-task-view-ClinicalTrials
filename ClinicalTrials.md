@@ -652,6 +652,11 @@ repository linked above.
     character string manipulation, conversion of S objects to LaTeX
     code, recoding variables, and bootstrap repeated measures analysis.
 
+-   `r pkg("mice")` implements multiple imputation by chained equations using 
+     Fully Conditional Specification (FCS) implemented by the MICE algorithm as 
+     described in Van Buuren and Groothuis-Oudshoorn (2011) 
+     <doi:10.18637/jss.v045.i03>
+
 -   `r pkg("rbmi")` implements standard and reference based multiple 
     imputation allowing for the imputation of longitudinal datasets using 
     predefined strategies. The package is described in Gower-Page et al (2022) 
@@ -698,6 +703,8 @@ repository linked above.
 -   `r pkg("clinsig")` This function calculates both
     parametric and non-parametric versions of the Jacobson-Truax
     estimates of clinical significance.
+  
+-   `r pkg("MatchIt")` is an R package that selects matched samples of the original treated and control groups with similar covariate distributions.  It can be used to match exactly on covariates, to match on propensity scores, or perform a variety of other matching procedures.   The package also implements a series of recommendations offered in Ho, Imai, King, and Stuart (2007) <doi:10.1093/pan/mpl013>.   After appropriately preprocessing with MatchIt, researchers can use whatever parametric model they would have used without MatchIt and produce inferences that are more robust and less sensitive to modeling assumptions. Matching methods, assessing balance, and estimating effects after balance is described in the vignettes.
 
 -   `r pkg("nppbib")` implements a nonparametric statistical
     test for rank or score data from partially-balanced incomplete
