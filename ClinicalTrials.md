@@ -531,6 +531,8 @@ repository linked above.
 
 -   `r pkg("metasens")` is a package for statistical methods
     to model and adjust for bias in meta-analysis
+    
+-   `r pkg("netmeta")` provides a comprehensive set of functions for frequentist methods in network meta-analysis, including additive models, analysis of binary data, ranking methods (SUCRA, P-scores), consistency checks, league tables, funnel plots, evidence flow measures, network graphs, treatment ranking diagrams, contribution matrices, meta-regression, and subgroup analysis.
 
 -   `r pkg("RBesT")` Tool-set to support Bayesian evidence synthesis. It facilitate the use of historical information in clinical trials. Once relevant historical information has been identified, it supports the derivation of informative priors via the Meta-Analytic-Predictive (MAP) approach and the evaluation of the trial’s operating characteristics.
 
