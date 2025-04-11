@@ -22,6 +22,8 @@ Packages are grouped in the following categories:
 
 Here are several foundational books on clinical trial design and analysis that can help users gain a deeper understanding of the methods implemented in the relevant R packages: [Clinical Trials: A Practical Approach](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118793916), [Fundamentals of Clinical Trials](https://link.springer.com/book/10.1007/978-3-319-18539-2), [Sample Sizes for Clinical Trials](https://www.routledge.com/Sample-Sizes-for-Clinical-Trials/Julious/p/book/9781138587892?srsltid=AfmBOopllJ4lcXrd-J6q76oPSQl3Zae-X7LqAYmh1zbt_BY7_0ZD0gN0), [Group Sequential and Confirmatory Adaptive Designs in Clinical Trials](https://link.springer.com/book/10.1007/978-3-319-32562-0), [Bayesian Adaptive Methods for Clinical Trials](https://www.routledge.com/Bayesian-Adaptive-Methods-for-Clinical-Trials/Berry-Carlin-Lee-Muller/p/book/9781032922058?srsltid=AfmBOopPzoSaPFpQT8vTUc6WmJpn4_sNSQZQntvryGtRPPM6IgySOh7F).
 
+[Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](http://www.R-project.org/doc/R-FDA.pdf): this document outlines the R Foundation's consensus on using R in GxP-regulated environments, providing a framework for end users to comply with internal procedures, documentation needs, and regulatory requirements.
+
 
 ### Inclusion Criteria
 
@@ -627,7 +629,4 @@ repository linked above.
 
 -   `r pkg("seqmon")` provides sequential monitoring of clinical trials. It calculates the efficacy and futility boundaries at each look. It allows modifying the design and tracking the design update history.
 
-
-### Links
--   [Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](http://www.R-project.org/doc/R-FDA.pdf)
 
