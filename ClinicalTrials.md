@@ -27,7 +27,9 @@ Here are several foundational books on clinical trial design and analysis that c
 
 ### Inclusion Criteria
 
-Packages are deemed in scope if they provide tools to support the design, monitoring and analysis of clinical trials. Please refer to task views `r view("ExperimentalDesign")`, `r view("Meta-analysis")`, `r view("MissingData")`, `r view("Pharmacokinetics")`, `r view("Survival")` for a more comprehensive list of R packages related to these topics.
+The packages included in this task view were carefully curated through a combination of expert recommendations from the pharmaceutical industry and academia, as well as an automated CRAN search using the `pkgsearch::pkg_search()` function. The search leveraged keywords aligned with our grouping categories, such as clinical trials, study design, adaptive design, sample size calculation, etc. Packages were considered within scope if they offered tools to facilitate the design, monitoring, or analysis of clinical trials. 
+
+Please refer to task views `r view("ExperimentalDesign")`, `r view("Meta-analysis")`, `r view("MissingData")`, `r view("Pharmacokinetics")`, `r view("Survival")` for a more comprehensive list of R packages related to these topics.
 
 Contributions are always welcome and encouraged. You can contribute by emailing the
 maintainer directly or by submitting an issue or pull request in the GitHub
