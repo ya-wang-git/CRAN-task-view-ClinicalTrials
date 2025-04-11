@@ -99,8 +99,6 @@ repository linked above.
 
 -   `r pkg("SAME")` Design a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation. James M S Wason, Jean E Abraham, Richard D Baird, Ioannis Gournaris, Anne-Laure Vallier, James D Brenton, Helena M Earl, Adrian P Mander (2015) <doi:10.1038/bjc.2015.278>. Guosheng Yin, Nan Chen, J. Jack Lee (2018) <doi:10.1007/s12561-017-9199-7>. Ying Yuan, Beibei Guo, Mark Munsell, Karen Lu, Amir Jazaeri (2016) <doi:10.1002/sim.6971>.
 
-[comment]: <> (Will be added to CRAN later)
-[comment]: <> (-   `r pkg("SIMPLE")` is a modular R package to simulate clinical trials and was developed to solve the problem of poor shareability and re-usability of existing software code in future projects (Meyer et al. (2023) <doi:10.1016/j.softx.2023.101515>). In `r pkg("SIMPLE")`, different aspects of the simulation (e.g., participant recruitment, analysis strategies, and the inclusion and exclusion of further interventions into the platform) are governed by partially independent and re-usable “modules”. Due to its architecture, `r pkg("SIMPLE")` can be used as a backbone from which to create highly complex designs that are accessible to users with very limited R skills, while more advanced users can nearly infinitely tweak the designs.)
 
 #### *Bioequivalence*
 
@@ -535,9 +533,6 @@ repository linked above.
     to three level of nesting. Power simulations that are flexible
     allowing the specification of missing data, unbalanced designs, and
     different random error distributions are built into the package.
-    
-[comment]: <> (Will be added to CRAN later)    
-[comment]: <> (-   `r pkg("SIMPLE")` is a modular R package to simulate clinical trials and was developed to solve the problem of poor shareability and re-usability of existing software code in future projects (Meyer et al. (2023) <doi:10.1016/j.softx.2023.101515>). In `r pkg("SIMPLE")`, different aspects of the simulation (e.g., participant recruitment, analysis strategies, and the inclusion and exclusion of further interventions into the platform) are governed by partially independent and re-usable “modules”. Due to its architecture, `r pkg("SIMPLE")` can be used as a backbone from which to create highly complex designs that are accessible to users with very limited R skills, while more advanced users can nearly infinitely tweak the designs.)
 
 -   `r pkg("UnifiedDoseFinding")` In many phase I trials,
     the design goal is to find the dose associated with a certain target
