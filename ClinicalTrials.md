@@ -522,15 +522,9 @@ repository linked above.
     
 #### *Meta-Analysis*
 
--   `r pkg("meta")` is for fixed and random effects
-    meta-analysis. It has Functions for tests of bias, forest and funnel
-    plot.
+-   `r pkg("meta")` is a user-friendly package offering standard meta-analysis methods as described in "Meta-Analysis with R" (2015) <[doi: 10.1007/978-3-319-21416-0](https://doi.org/10.1007/978-3-319-21416-0)>, featuring common and random effects models, various plots (e.g., forest, funnel), advanced models (e.g., three-level, GLMM), bias evaluation, meta-regression, cumulative and leave-one-out analysis, and subgroup forest plot summaries.
     
--   `r pkg("metafor")` consists of a collection of functions
-    for conducting meta-analyses. Fixed- and random-effects models (with
-    and without moderators) can be fitted via the general linear
-    (mixed-effects) model. For 2x2 table data, the Mantel-Haenszel and
-    Peto's method are also implemented.
+-   `r pkg("metafor")` is a comprehensive package for meta-analyses, providing functions to calculate effect sizes, fit various (e.g., fixed-, and random-effects) models, perform moderator/meta-regression analyses, create meta-analytical plots, apply specialized methods (e.g., Mantel-Haenszel method, Peto's method), and fit meta-analytic multivariate/multilevel models accounting for non-independent sampling errors or clustering.
     
 -   `r pkg("metaLik")` Likelihood inference in meta-analysis
     and meta-regression models.
