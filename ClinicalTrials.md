@@ -45,8 +45,7 @@ repository linked above.
     tests. Currently, four tests are included: Bauer and Koehne (1994),
     Lehmacher and Wassmer (1999), Vandemeulebroecke (2006), and the
     horizontal conditional error function. User-defined tests can also
-    be implemented. Reference: Vandemeulebroecke, An investigation of
-    two-stage tests, Statistica Sinica 2006.
+    be implemented.
     
 -   `r pkg("adestr")` provides methods to evaluate the performance characteristics of various point and interval estimators for optimal adaptive two-stage designs. Specifically, this package is written to work with trial designs created by the `adoptr` package (Kunzmann et al. (2021) <[doi:10.18637/jss.v098.i09](https://doi.org/10.18637/jss.v098.i09)>; Pilz et al. (2021) <[doi:10.1002/sim.8953](https://doi.org/10.1002/sim.8953)>). Apart from the a priori evaluation of performance characteristics, this package also allows for the evaluation of the implemented estimators on real datasets, and it implements methods to calculate p-values.
 
@@ -56,7 +55,7 @@ repository linked above.
 
 -   `r pkg("asd", priority = "core")`{#asd} runs simulations for adaptive seamless designs with and without early outcomes for treatment selection and subpopulation type designs. It allows sample size modification in subpopulation selection.
 
--   `r pkg("ASSISTant")` Clinical trial design for subgroup selection in three-stage group sequential trial as described in Lai, Lavori and Liao (2014) <[doi:10.1016/j.cct.2014.09.001](https://doi.org/10.1016/j.cct.2014.09.001)>. Includes facilities for design, exploration and analysis of such trials. An implementation of the initial DEFUSE-3 trial is also provided as a vignette.
+-   `r pkg("ASSISTant")` Clinical trial design for subgroup selection in three-stage group sequential trial as described in Lai et al. (2014) <[doi:10.1016/j.cct.2014.09.001](https://doi.org/10.1016/j.cct.2014.09.001)>. Includes facilities for design, exploration and analysis of such trials. An implementation of the initial DEFUSE-3 trial is also provided as a vignette.
 
 -   `r pkg("BATSS")` Defines operating characteristics of Bayesian Adaptive Trials considering a generalised linear model response via Monte Carlo simulations of Bayesian GLM fitted via integrated Laplace approximations (INLA).
   
@@ -70,13 +69,13 @@ repository linked above.
 
 -   `r pkg("esDesign")`{#esDesign} is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) <[doi:10.1016/j.cct.2020.106216](https://doi.org/10.1016/j.cct.2020.106216)>. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR) and AED3-SSR (or ES3-SSR). In addition, this package also contains several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) <[doi:10.1177/1740774513503739](https://doi.org/10.1177/1740774513503739)>, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995), and some useful functions. In details, we can calculate the futility and/or efficacy stopping boundaries, the sample size required, calibrate the value of the threshold of the difference between subgroup-specific test statistics, conduct the simulation studies in AED, SSR, AED1-SSR, AED2-SSR and AED3-SSR.
 
--   `r pkg("eselect")` Endpoint selection and sample size reassessment for multiple binary endpoints based on blinded and/or unblinded data. Trial design that allows an adaptive modification of the primary endpoint based on blinded information obtained at an interim analysis. The decision rule chooses the endpoint with the lower estimated required sample size. Additionally, the sample size is reassessed using the estimated event probabilities and correlation between endpoints. The implemented design is proposed in Bofill Roig, M., GC3mez Melis, G., Posch, M., and Koenig, F. (2022) <[doi:10.48550/arXiv.2206.09639](https://doi.org/10.48550/arXiv.2206.09639)>.
+-   `r pkg("eselect")` Endpoint selection and sample size reassessment for multiple binary endpoints based on blinded and/or unblinded data. Trial design that allows an adaptive modification of the primary endpoint based on blinded information obtained at an interim analysis. The decision rule chooses the endpoint with the lower estimated required sample size. Additionally, the sample size is reassessed using the estimated event probabilities and correlation between endpoints. The implemented design is proposed in Roig et al. (2022) <[doi:10.48550/arXiv.2206.09639](https://doi.org/10.48550/arXiv.2206.09639)>.
 
 -   `r pkg("gMCP")` provides functions and a graphical user interface for graphical described multiple test procedures. Examples of weighted tests that are available in gMCP are the weighted Bonferroni, parametric and Simes tests.
 
 -   `r pkg("graphicalMCP")` is a low-dependency implementation of graphical MCPs which allow mixed types of tests. It also includes power simulations and visualization of graphical MCPs.
 
--   `r pkg("gsMAMS")` It provides functions to generate operating characteristics and to calculate Sequential Conditional Probability Ratio Tests(SCPRT) efficacy and futility boundary values along with sample/event size of Multi-Arm Multi-Stage(MAMS) trials for different outcomes. The package is based on Jianrong Wu, Yimei Li, Liang Zhu (2023) <[doi:10.1002/sim.9682](https://doi.org/10.1002/sim.9682)>, Jianrong Wu, Yimei Li (2023) "Group Sequential Multi-Arm Multi-Stage Survival Trial Design with Treatment Selection"(Manuscript accepted for publication) and Jianrong Wu, Yimei Li, Shengping Yang (2023) "Group Sequential Multi-Arm Multi-Stage Trial Design with Ordinal Endpoints"(In preparation). 
+-   `r pkg("gsMAMS")` It provides functions to generate operating characteristics and to calculate Sequential Conditional Probability Ratio Tests(SCPRT) efficacy and futility boundary values along with sample/event size of Multi-Arm Multi-Stage(MAMS) trials for different outcomes. The package is based on Wu et al. (2023) <[doi:10.1002/sim.9682](https://doi.org/10.1002/sim.9682)>, Wu and Li (2023) <[doi: 10.1002/sim.9682](https://doi.org/10.1002/sim.9682)>, and Wu et al. (2023) "Group Sequential Multi-Arm Multi-Stage Trial Design with Ordinal Endpoints"(In preparation). 
 
 -   `r pkg("MABOUST")` conducts and simulates the MABOUST design, including making interim decisions to stop a treatment for inferiority or stop the trial early for superiority or equivalency.
 
@@ -90,7 +89,7 @@ repository linked above.
     chance of exposing them to subtherapeutic or overly toxic doses. It
     is used to design single-agent trials.
 
--   `r pkg("NCC")`{#NCC} is an R package that allows users to simulate platform trials and perform treatment–control comparisons using non-concurrent control data (Krotka et al. (2023) ) <[doi:10.1016/j.softx.2023.101437](https://doi.org/10.1016/j.softx.2023.101437)>. The package supports simulation of complex platform trial designs with continuous or binary endpoints and a flexible number of treatment arms that enter the trial at different time points. The software accommodates different treatment effects among the arms and includes several patterns for time trends. Analytic approaches currently implemented in the package cover frequentist modes (e.g., regression model adjusting for time as a fixed effect mixed model adjusting for time as a random factor, and regression splines), the Bayesian time machine a meta-analytic predictive prior separate analysis, and pooled analysis.
+-   `r pkg("NCC")`{#NCC} is an R package that allows users to simulate platform trials and perform treatment–control comparisons using non-concurrent control data (Krotka et al. (2023) <[doi:10.1016/j.softx.2023.101437](https://doi.org/10.1016/j.softx.2023.101437)>). The package supports simulation of complex platform trial designs with continuous or binary endpoints and a flexible number of treatment arms that enter the trial at different time points. The software accommodates different treatment effects among the arms and includes several patterns for time trends. Analytic approaches currently implemented in the package cover frequentist modes (e.g., regression model adjusting for time as a fixed effect mixed model adjusting for time as a random factor, and regression splines), the Bayesian time machine a meta-analytic predictive prior separate analysis, and pooled analysis.
 
 -   `r pkg("rpact", priority = "core")`{#rpact} Design and analysis of confirmatory
     adaptive clinical trials with continuous, binary, and survival
@@ -99,7 +98,7 @@ repository linked above.
     sequential as well as multi-stage adaptive hypotheses tests that are
     based on the combination testing principle.
 
--   `r pkg("SAME")`{#SAME} Design a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation. James M S Wason, Jean E Abraham, Richard D Baird, Ioannis Gournaris, Anne-Laure Vallier, James D Brenton, Helena M Earl, Adrian P Mander (2015) <[doi:10.1038/bjc.2015.278](https://doi.org/10.1038/bjc.2015.278)>. Guosheng Yin, Nan Chen, J. Jack Lee (2018) <[doi:10.1007/s12561-017-9199-7](https://doi.org/10.1007/s12561-017-9199-7)>. Ying Yuan, Beibei Guo, Mark Munsell, Karen Lu, Amir Jazaeri (2016) <[doi:10.1002/sim.6971](https://doi.org/10.1002/sim.6971)>.
+-   `r pkg("SAME")`{#SAME} Design a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation. Wason et al. (2015) <[doi:10.1038/bjc.2015.278](https://doi.org/10.1038/bjc.2015.278)>. Yin et al. (2018) <[doi:10.1007/s12561-017-9199-7](https://doi.org/10.1007/s12561-017-9199-7)>. Yuan et al. (2016) <[doi:10.1002/sim.6971](https://doi.org/10.1002/sim.6971)>.
 
 
 #### *Bioequivalence*
@@ -162,8 +161,7 @@ repository linked above.
     simulate a '3+3/PC' dose-finding study.
     
 -   `r pkg("ewoc")`{#ewoc} An implementation of a variety of
-    escalation with overdose control designs introduced by Babb, Rogatko
-    and Zacks (1998)
+    escalation with overdose control designs introduced by Babb et al. (1998)
     <[doi:10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9](https://dx.doi.org/10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9)>
     . It calculates the next dose as a clinical trial proceeds as well
     as performs simulations to obtain operating characteristics.    
@@ -227,7 +225,7 @@ repository linked above.
 -   `r pkg("MCPMod")` This package implements a methodology
     for the design and analysis of dose-response studies that combines
     aspects of multiple comparison procedures and modeling approaches
-    (Bretz, Pinheiro and Branson, 2005, Biometrics 61, 738-748). The
+    (Bretz et al. (2005) <[doi:10.1111/j.1541-0420.2005.00344.x](https://doi.org/10.1111/j.1541-0420.2005.00344.x)>). The
     package provides tools for the analysis of dose finding trials as
     well as a variety of tools necessary to plan a trial to be conducted
     with the MCPMod methodology.    
@@ -259,7 +257,7 @@ repository linked above.
     
 -   `r pkg("dfmta")` Phase I/II adaptive dose-finding design for single-agent Molecularly Targeted Agent (MTA), according to the paper "Phase I/II Dose-Finding Design for Molecularly Targeted Agent: Plateau Determination using Adaptive Randomization", Riviere Marie-Karelle et al. (2016) <[doi:10.1177/0962280216631763](https://doi.org/10.1177/0962280216631763)>.
 
--   `r pkg("iAdapt")` Simulate and implement early phase two-stage adaptive dose-finding design for binary and quasi-continuous toxicity endpoints. See Chiuzan et al. (2018) for further reading <[doi:10.1080/19466315.2018.1462727](https://doi.org/10.1080/19466315.2018.1462727)>.
+-   `r pkg("iAdapt")` Simulate and implement early phase two-stage adaptive dose-finding design for binary and quasi-continuous toxicity endpoints. See Chiuzan et al. (2018) <[doi:10.1080/19466315.2018.1462727](https://doi.org/10.1080/19466315.2018.1462727)> for further reading.
 
 
 #### *Factorial Designs*
@@ -297,7 +295,7 @@ repository linked above.
     
 -   `r pkg("GroupSeq")` computes probabilities related to group sequential designs for normally distributed test statistics. Enables to derive critical boundaries, power, drift, and confidence intervals of such designs. Supports the alpha spending approach by Lan-DeMets (1994) <[doi:10.1002/sim.4780131308](https://doi.org/10.1002/sim.4780131308)>.  
 
--   `r pkg("gsDesign")` derives group sequential clinical trial designs and describes their properties. Particular focus on time-to-event, binary, and continuous outcomes. Largely based on methods described in Jennison, Christopher and Turnbull, Bruce W., 2000, "Group Sequential Methods with Applications to Clinical Trials" (ISBN: 0-8493-0316-8).
+-   `r pkg("gsDesign")` derives group sequential clinical trial designs and describes their properties. Particular focus on time-to-event, binary, and continuous outcomes. Largely based on methods described in the book *Group Sequential Methods with Applications to Clinical Trials* by Jennison et al. (2000) (ISBN:0-8493-0316-8).
 
 -   `r pkg("ldbounds", priority = "core")` uses Lan-DeMets
     Method for group sequential trial; its functions calculate bounds
@@ -332,11 +330,11 @@ repository linked above.
 
 -   `r pkg("brada")` provides access to a range of functions for analyzing, applying and visualizing Bayesian response-adaptive trial designs for a binary endpoint. Includes the predictive probability approach and the predictive evidence value designs for binary endpoints.
 
--   `r pkg("carat")` provides functions and command-line user interface to generate allocation sequence by covariate-adaptive randomization for clinical trials. The package currently supports six covariate-adaptive randomization procedures. Three hypothesis testing methods that are valid and robust under covariate-adaptive randomization are also available in the package to facilitate the inference for treatment effect under the included randomization procedures. Additionally, the package provides comprehensive and efficient tools to allow one to evaluate and compare the performance of randomization procedures and tests based on various criteria. See Ma W, Ye X, Tu F, and Hu F (2023) <[doi:10.18637/jss.v107.i02](https://doi.org/10.18637/jss.v107.i02)> for details. 
+-   `r pkg("carat")` provides functions and command-line user interface to generate allocation sequence by covariate-adaptive randomization for clinical trials. The package currently supports six covariate-adaptive randomization procedures. Three hypothesis testing methods that are valid and robust under covariate-adaptive randomization are also available in the package to facilitate the inference for treatment effect under the included randomization procedures. Additionally, the package provides comprehensive and efficient tools to allow one to evaluate and compare the performance of randomization procedures and tests based on various criteria. See Ma et al. (2023) <[doi:10.18637/jss.v107.i02](https://doi.org/10.18637/jss.v107.i02)> for details. 
 
--   `r pkg("CARM")` In randomized controlled trial (RCT), balancing covariate is often one of the most important concern. CARM package provides functions to balance the covariates and generate allocation sequence by covariate-adjusted Adaptive Randomization via Mahalanobis-distance (ARM) for RCT. About what ARM is and how it works please see Y. Qin, Y. Li, W. Ma, H. Yang, and F. Hu (2022). "Adaptive randomization via Mahalanobis distance" Statistica Sinica. <[doi:10.5705/ss.202020.0440](https://doi.org/10.5705/ss.202020.0440)>. In addition, the package is also suitable for the randomization process of multi-arm trials. For details, please see Yang H, Qin Y, Wang F, et al. (2023). "Balancing covariates in multi-arm trials via adaptive randomization" Computational Statistics & Data Analysis <[doi:10.1016/j.csda.2022.107642](https://doi.org/10.1016/j.csda.2022.107642)>.
+-   `r pkg("CARM")` In randomized controlled trial (RCT), balancing covariate is often one of the most important concern. CARM package provides functions to balance the covariates and generate allocation sequence by covariate-adjusted Adaptive Randomization via Mahalanobis-distance (ARM) for RCT. About what ARM is and how it works please see Qin et al. (2022) <[doi:10.5705/ss.202020.0440](https://doi.org/10.5705/ss.202020.0440)>. In addition, the package is also suitable for the randomization process of multi-arm trials. For details, please see Yang et al. (2023) <[doi:10.1016/j.csda.2022.107642](https://doi.org/10.1016/j.csda.2022.107642)>.
 
--   `r pkg("covadapt")` iImplements seven Covariate-Adaptive Randomization to assign patients to two treatments. Three of these procedures can also accommodate quantitative and mixed covariates. Given a set of covariates, the user can generate a single sequence of allocations or replicate the design multiple times by simulating the patients' covariate profiles. At the end, an extensive assessment of the performance of the randomization procedures is provided, calculating several imbalance measures. See Baldi Antognini A, Frieri R, Zagoraiou M and Novelli M (2022) <[doi:10.1007/s00362-022-01381-1](https://doi.org/10.1007/s00362-022-01381-1)> for details.
+-   `r pkg("covadapt")` iImplements seven Covariate-Adaptive Randomization to assign patients to two treatments. Three of these procedures can also accommodate quantitative and mixed covariates. Given a set of covariates, the user can generate a single sequence of allocations or replicate the design multiple times by simulating the patients' covariate profiles. At the end, an extensive assessment of the performance of the randomization procedures is provided, calculating several imbalance measures. See  Antognini et al. (2022) <[doi:10.1007/s00362-022-01381-1](https://doi.org/10.1007/s00362-022-01381-1)> for details.
 
 -   `r pkg("grouprar")` implement group response-adaptive randomization procedures, which also integrates standard non-group response-adaptive randomization methods as specialized instances. It is also uniquely capable of managing complex scenarios, including those with delayed and missing responses, thereby expanding its utility in real-world applications. This package offers 16 functions for simulating a variety of response adaptive randomization procedures. These functions are essential for guiding the selection of statistical methods in clinical trials, providing a flexible and effective approach to trial design.
 
@@ -411,8 +409,7 @@ repository linked above.
 
 -   `r pkg("TrialSize", priority = "core")` This package has
     more than 80 functions from the book *Sample Size Calculations in
-    Clinical Research* (Chow & Wang & Shao, 2007, 2nd ed., Chapman
-    &Hall/CRC).
+    Clinical Research* by Chow et al. (2007) <[doi:10.1201/9781584889830](https://doi.org/10.1201/9781584889830)>.
 
     
 #### *Simulation*
@@ -498,7 +495,7 @@ repository linked above.
     `power.prop.test`, `power.anova.test`, `lm`, `glm`, `nls`, `anova`
     (and its `lm` and `glm` methods) among many others.
     
--   `r pkg("TestDesign")` uses the optimal test design approach by Birnbaum (1968, ISBN:9781593119348) and van der Linden (2018) <[doi:10.1201/9781315117430](https://doi.org/10.1201/9781315117430)> to construct fixed, adaptive, and parallel tests. Supports the following mixed-integer programming (MIP) solver packages: `Rsymphony`, `gurobi`, `lpSolve`, and `Rglpk`. The `gurobi` package is not available from CRAN; see <https://www.gurobi.com/downloads/>.
+-   `r pkg("TestDesign")` uses the optimal test design approach by Birnbaum (1968) (ISBN:9781593119348) and van der Linden (2018) <[doi:10.1201/9781315117430](https://doi.org/10.1201/9781315117430)> to construct fixed, adaptive, and parallel tests. Supports the following mixed-integer programming (MIP) solver packages: `Rsymphony`, `gurobi`, `lpSolve`, and `Rglpk`. The `gurobi` package is not available from CRAN; see <https://www.gurobi.com/downloads/>.
     
 
 #### *Longitudinal Data Analysis*
@@ -520,7 +517,7 @@ repository linked above.
     
 #### *Meta-Analysis*
 
--   `r pkg("meta")` is a user-friendly package offering standard meta-analysis methods as described in "Meta-Analysis with R" (2015) <[doi: 10.1007/978-3-319-21416-0](https://doi.org/10.1007/978-3-319-21416-0)>, featuring common and random effects models, various plots (e.g., forest, funnel), advanced models (e.g., three-level, GLMM), bias evaluation, meta-regression, cumulative and leave-one-out analysis, and subgroup forest plot summaries.
+-   `r pkg("meta")` is a user-friendly package offering standard meta-analysis methods as described in the book *Meta-Analysis with R* by Schwarzer et al. (2015) <[doi: 10.1007/978-3-319-21416-0](https://doi.org/10.1007/978-3-319-21416-0)>, featuring common and random effects models, various plots (e.g., forest, funnel), advanced models (e.g., three-level, GLMM), bias evaluation, meta-regression, cumulative and leave-one-out analysis, and subgroup forest plot summaries.
     
 -   `r pkg("metafor")` is a comprehensive package for meta-analyses, providing functions to calculate effect sizes, fit various (e.g., fixed-, and random-effects) models, perform moderator/meta-regression analyses, create meta-analytical plots, apply specialized methods (e.g., Mantel-Haenszel method, Peto's method), and fit meta-analytic multivariate/multilevel models accounting for non-independent sampling errors or clustering.
     
@@ -550,7 +547,7 @@ repository linked above.
 
 -   `r pkg("rbmi")` implements standard and reference based multiple 
     imputation allowing for the imputation of longitudinal datasets using 
-    predefined strategies. The package is described in Gower-Page et al (2022) 
+    predefined strategies. The package is described in Gower-Page et al. (2022) 
     <[doi: 10.21105/joss.04251](https://doi.org/10.21105/joss.04251)>.
     
 -   `r pkg("remiod")` implements Reference-based multiple imputation of ordinal and binary responses under Bayesian framework, as described in Wang and Liu (2022) <[doi:10.48550/arXiv.2203.02771](https://doi.org/10.48550/arXiv.2203.02771)>. Methods for missing-not-at-random include Jump-to-Reference (J2R), Copy Reference (CR), and Delta Adjustment which can generate tipping point analysis.
@@ -587,7 +584,7 @@ repository linked above.
     parametric and non-parametric versions of the Jacobson-Truax
     estimates of clinical significance.
   
--   `r pkg("MatchIt")` is an R package that selects matched samples of the original treated and control groups with similar covariate distributions.  It can be used to match exactly on covariates, to match on propensity scores, or perform a variety of other matching procedures. The package also implements a series of recommendations offered in Ho, Imai, King, and Stuart (2007) <[doi:10.1093/pan/mpl013](https://doi.org/10.1093/pan/mpl013)>. After appropriately preprocessing with MatchIt, researchers can use whatever parametric model they would have used without MatchIt and produce inferences that are more robust and less sensitive to modeling assumptions. Matching methods, assessing balance, and estimating effects after balance is described in the vignettes.
+-   `r pkg("MatchIt")` is an R package that selects matched samples of the original treated and control groups with similar covariate distributions.  It can be used to match exactly on covariates, to match on propensity scores, or perform a variety of other matching procedures. The package also implements a series of recommendations offered in Ho et al. (2007) <[doi:10.1093/pan/mpl013](https://doi.org/10.1093/pan/mpl013)>. After appropriately preprocessing with MatchIt, researchers can use whatever parametric model they would have used without MatchIt and produce inferences that are more robust and less sensitive to modeling assumptions. Matching methods, assessing balance, and estimating effects after balance is described in the vignettes.
 
 -   `r pkg("nppbib")` implements a nonparametric statistical
     test for rank or score data from partially-balanced incomplete
@@ -600,7 +597,7 @@ repository linked above.
     
 -   `r pkg("ThreeGroups")` This package implements the
     Maximum Likelihood estimator for three-group designs proposed by
-    Gerber, Green, Kaplan, and Kern (2010).
+    Gerber et al. (2010).
     
 
 ### Monitoring
