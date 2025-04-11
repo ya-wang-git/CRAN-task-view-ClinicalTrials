@@ -368,14 +368,6 @@ repository linked above.
     outcomes. Separate tools for statistical power and minimum
     detectable effect size computations are provided.
     
--   `r pkg("Hmisc")` contains around 200
-    miscellaneous functions useful for such things as data analysis,
-    high-level graphics, utility operations, functions for computing
-    sample size and power, translating SAS datasets into S, imputing
-    missing values, advanced table making, variable clustering,
-    character string manipulation, conversion of S objects to LaTeX
-    code, recoding variables, and bootstrap repeated measures analysis.
-    
 -   `r pkg("longpower", priority = "core")`Compute power and sample size 
     for linear models of longitudinal data. The package is described in 
     Iddi and Donohue (2022) <doi:10.32614/RJ-2022-022>. 
@@ -490,14 +482,6 @@ repository linked above.
     display of the most frequently occurring adverse events in the
     active arm of a clinical study.
 
--   `r pkg("Hmisc")` contains around 200
-    miscellaneous functions useful for such things as data analysis,
-    high-level graphics, utility operations, functions for computing
-    sample size and power, translating SAS datasets into S, imputing
-    missing values, advanced table making, variable clustering,
-    character string manipulation, conversion of S objects to LaTeX
-    code, recoding variables, and bootstrap repeated measures analysis.
-
 -   `r pkg("logistf")` Firth's Bias-Reduced Logistic Regression. Firth's method was proposed as ideal solution to the problem of separation in logistic regression.
 
 -   `r pkg("maic")` In MAIC, unbiased comparison between outcomes of two trials is facilitated by weighting the subject-level outcomes of one trial with weights derived such that the weighted aggregate measures of the prognostic or effect modifying variables are equal to those of the sample in the comparator trial.
@@ -562,14 +546,6 @@ repository linked above.
     
 
 #### *Missing Data Imputation*
-
--   `r pkg("Hmisc")` contains around 200
-    miscellaneous functions useful for such things as data analysis,
-    high-level graphics, utility operations, functions for computing
-    sample size and power, translating SAS datasets into S, imputing
-    missing values, advanced table making, variable clustering,
-    character string manipulation, conversion of S objects to LaTeX
-    code, recoding variables, and bootstrap repeated measures analysis.
 
 -   `r pkg("mice")` implements multiple imputation by chained equations using 
      Fully Conditional Specification (FCS) implemented by the MICE algorithm as 
