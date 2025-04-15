@@ -83,21 +83,13 @@ repository linked above.
 
 #### *Bioequivalence*
 
--   `r pkg("adaptIVPT")` contains functions carrying out adaptive procedures using mixed scaling approach to establish bioequivalence for in-vitro permeation test (IVPT) data. Currently, the package provides procedures based on parallel replicate design and balanced data, according to the U.S. Food and Drug Administration's "[Draft Guidance on Acyclovir](https://www.accessdata.fda.gov/drugsatfda_docs/psg/PSG_021478.pdf)". Potvin et al. (2008) <[doi:10.1002/pst.294](https://doi.org/10.1002/pst.294)> provides the basis for our adaptive design (see Method B). For a comprehensive overview of the method, refer to Lim et al. (2023) <[doi:10.1002/pst.2333](https://doi.org/10.1002/pst.2333)>. This package reflects the views of the authors and should not be construed to represent the views or policies of the U.S. Food and Drug Administration.
+-   `r pkg("adaptIVPT")` contains functions carrying out adaptive procedures using mixed scaling approach to establish bioequivalence for in-vitro permeation test (IVPT) data. Currently, the package provides procedures based on parallel replicate design and balanced data, according to the U.S. Food and Drug Administration's "[Draft Guidance on Acyclovir](https://www.accessdata.fda.gov/drugsatfda_docs/psg/PSG_021478.pdf)".
 
 -   `r pkg("PK")` contains methods to estimate PK parameters using non-compartmental theory and provides facilities to obtain confidence intervals and perform tests for single analysis as well as bioequivalence studies.
 
--   `r pkg("PowerTOST", priority = "core")`{#PowerTOST} contains functions to calculate power and sample size for various study designs used for bioequivalence studies. See function known.designs() for study designs covered. Moreover the package contains functions for power and sample size based on 'expected' power in case of uncertain (estimated) variability. Added are functions for the power and sample size for the ratio of two means with normally distributed data on the original scale (based on Fieller's confidence ('fiducial') interval).
+-   `r pkg("PowerTOST", priority = "core")`{#PowerTOST} contains functions to calculate power and sample size for various study designs used for bioequivalence studies. See function known.designs() for study designs covered. 
 
--   `r pkg("replicateBE")` Performs comparative
-    bioavailability calculations for Average Bioequivalence with
-    Expanding Limits (ABEL). Implemented are 'Method A' and 'Method
-    B' and the detection of outliers. If the design allows, assessment
-    of the empiric Type I Error and iteratively adjusting alpha to
-    control the consumer risk. Average Bioequivalence - optionally with
-    a tighter (narrow therapeutic index drugs) or wider acceptance range
-    (Gulf Cooperation Council, South Africa: Cmax) - is implemented as
-    well.
+-   `r pkg("replicateBE")` Performs comparative bioavailability calculations for Average Bioequivalence with Expanding Limits (ABEL). Implemented are 'Method A' and 'Method B' and the detection of outliers.
     
 
 #### *Dose-Finding*
