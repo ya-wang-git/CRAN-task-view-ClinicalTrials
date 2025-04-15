@@ -94,126 +94,34 @@ repository linked above.
 
 #### *Dose-Finding*
 
--   `r pkg("bcrm", priority = "core")`{#bcrm} This package
-    implements a wide variety of one and two-parameter Bayesian CRM
-    designs. The program can run interactively, allowing the user to
-    enter outcomes after each cohort has been recruited, or via
-    simulation to assess operating characteristics.
+-   `r pkg("bcrm", priority = "core")`{#bcrm} This package implements a wide variety of one and two-parameter Bayesian CRM designs. The program can run interactively, allowing the user to enter outcomes after each cohort has been recruited, or via simulation to assess operating characteristics.
 
--   `r pkg("crmPack")` Implements a wide range of
-    model-based dose escalation designs, ranging from classical and
-    modern continual reassessment methods (CRMs) based on dose-limiting
-    toxicity endpoints to dual-endpoint designs taking into account a
-    biomarker/efficacy outcome. The focus is on Bayesian inference,
-    making it very easy to setup a new design with its own JAGS code.
-    However, it is also possible to implement 3+3 designs for comparison
-    or models with non-Bayesian estimation. The whole package is written
-    in a modular form in the S4 class system, making it very flexible
-    for adaptation to new models, escalation or stopping rules.
+-   `r pkg("crmPack")` Implements a wide range of model-based dose escalation designs, ranging from classical and modern continual reassessment methods (CRMs) based on dose-limiting toxicity endpoints to dual-endpoint designs taking into account a biomarker/efficacy outcome. The focus is on Bayesian inference, making it very easy to setup a new design with its own JAGS code.
     
--   `r pkg("dfcrm", priority = "core")` This package provides
-    functions to run the CRM and TITE-CRM in phase I trials and
-    calibration tools for trial planning purposes.    
+-   `r pkg("dfcrm", priority = "core")` This package provides functions to run the CRM and TITE-CRM in phase I trials and calibration tools for trial planning purposes.    
     
--   `r pkg("DTAT")` Dose Titration Algorithm Tuning (DTAT)
-    is a methodologic framework allowing dose individualization to be
-    conceived as a continuous learning process that begins in
-    early-phase clinical trials and continues throughout drug
-    development, on into clinical practice. This package includes code
-    that researchers may use to reproduce or extend key results of the
-    DTAT research programme, plus tools for trialists to design and
-    simulate a '3+3/PC' dose-finding study.
+-   `r pkg("DTAT")` Dose Titration Algorithm Tuning (DTAT) is a methodologic framework allowing dose individualization to be conceived as a continuous learning process that begins in early-phase clinical trials and continues throughout drug development, on into clinical practice. This package includes code that researchers may use to reproduce or extend key results of the DTAT research programme, plus tools for trialists to design and simulate a '3+3/PC' dose-finding study.
     
--   `r pkg("ewoc")`{#ewoc} An implementation of a variety of
-    escalation with overdose control designs introduced by Babb et al. (1998)
-    <[doi:10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9](https://dx.doi.org/10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9)>
-    . It calculates the next dose as a clinical trial proceeds as well
-    as performs simulations to obtain operating characteristics.    
+-   `r pkg("ewoc")`{#ewoc} An implementation of a variety of escalation with overdose control designs introduced by Babb et al. (1998) <[doi:10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9](https://dx.doi.org/10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9)>. It calculates the next dose as a clinical trial proceeds as well as performs simulations to obtain operating characteristics.    
     
 -   `r pkg("OncoBayes2")` Bayesian Logistic Regression for Oncology Dose-Escalation Trials. It provides flexible functions for Bayesian meta-analytic modeling of the incidence of Dose Limiting Toxicities (DLTs) by dose level, under treatment regimes involving any number of combination partners.
 
--   `r pkg("UnifiedDoseFinding")`{#UnifiedDoseFinding} In many phase I trials,
-    the design goal is to find the dose associated with a certain target
-    toxicity rate. In some trials, the goal can be to find the dose with
-    a certain weighted sum of rates of various toxicity grades. For
-    others, the goal is to find the dose with a certain mean value of a
-    continuous response. This package provides the setup and
-    calculations needed to run a dose-finding trial with non-binary
-    endpoints and performs simulations to assess design's operating
-    characteristics under various scenarios.
-
--   `r pkg("CRM")` implements the continual reassessment method (CRM) for dose finding in Phase I clinical trials. The operating characteristics of CRM are summarized through simulations.
+-   `r pkg("UnifiedDoseFinding")`{#UnifiedDoseFinding} In many phase I trials, the design goal is to find the dose associated with a certain target toxicity rate, or the goal can be to find the dose with a certain weighted sum of rates of various toxicity grades, or to find the dose with a certain mean value of a continuous response. This package provides the setup and calculations needed to run a dose-finding trial with non-binary endpoints and performs simulations to assess design's operating characteristics under various scenarios.
     
--   `r pkg("dfpk")`{#dfpk} Statistical methods involving PK
-    measures are provided, in the dose allocation process during a Phase
-    I clinical trials. These methods enter pharmacokinetics (PK) in the
-    dose finding designs in different ways, including covariates models,
-    dependent variable or hierarchical models. This package provides
-    functions to generate data from several scenarios and functions to
-    run simulations which their objective is to determine the maximum
-    tolerated dose (MTD).  
+-   `r pkg("dfped")`{#dfped} A unified method for designing and analysing dose-finding trials in paediatrics, while bridging information from adults, is proposed in the dfped package. The dose range can be calculated under three extrapolation methods: linear, allometry and maturation adjustment, using pharmacokinetic (PK) data, assuming that target exposures are the same in both populations.
     
--   `r pkg("dfped")`{#dfped} A unified method for designing
-    and analysing dose-finding trials in paediatrics, while bridging
-    information from adults, is proposed in the dfped package. The dose
-    range can be calculated under three extrapolation methods: linear,
-    allometry and maturation adjustment, using pharmacokinetic (PK)
-    data. To do this, it is assumed that target exposures are the same
-    in both populations. The working model and prior distribution
-    parameters of the dose-toxicity and dose-efficacy relationships can
-    be obtained using early phase adult toxicity and efficacy data at
-    several dose levels through dfped package. Priors are used into the
-    dose finding process through a Bayesian model selection or adaptive
-    priors, to facilitate adjusting the amount of prior information to
-    differences between adults and children. This calibrates the model
-    to adjust for misspecification if the adult and paediatric data are
-    very different. User can use his/her own Bayesian model written in
-    Stan code through the dfped package. A template of this model is
-    proposed in the examples of the corresponding R functions in the
-    package. Finally, in this package you can find a simulation function
-    for one trial or for more than one trial.
-    
--   `r pkg("DoseFinding")` provides functions for
-    the design and analysis of dose-finding experiments (for example
-    pharmaceutical Phase II clinical trials). It provides functions for:
-    multiple contrast tests, fitting non-linear dose-response models,
-    calculating optimal designs and an implementation of the
-    `r pkg("MCPMod")` methodology. Currently only normally
-    distributed homoscedastic endpoints are supported.
-
+-   `r pkg("DoseFinding")` provides functions for the design and analysis of dose-finding experiments (for example pharmaceutical Phase II clinical trials). It provides functions for: multiple contrast tests, fitting non-linear dose-response models, calculating optimal designs and an implementation of the `r pkg("MCPMod")` methodology, but currently only normally distributed homoscedastic endpoints are supported.
 
 -   `r pkg("pocrm")` implements functions to implement and simulate the partial order continual reassessment method (PO-CRM) for use in Phase I trials of combinations of agents.
 
 -   `r pkg("escalation")` Implements a range of different approaches for dose-finding clinical trials including the continual reassessment method (CRM), the modified TPI (mTPI) design, the Bayesian optimal interval design (BOIN), EffTox and the 3+3 design.
 
--   `r pkg("MCPMod")` This package implements a methodology
-    for the design and analysis of dose-response studies that combines
-    aspects of multiple comparison procedures and modeling approaches
-    (Bretz et al. (2005) <[doi:10.1111/j.1541-0420.2005.00344.x](https://doi.org/10.1111/j.1541-0420.2005.00344.x)>). The
-    package provides tools for the analysis of dose finding trials as
-    well as a variety of tools necessary to plan a trial to be conducted
-    with the MCPMod methodology.    
+-   `r pkg("MCPMod")` This package implements a methodology for the design and analysis of dose-response studies that combines aspects of multiple comparison procedures and modeling approaches (Bretz et al. (2005) <[doi:10.1111/j.1541-0420.2005.00344.x](https://doi.org/10.1111/j.1541-0420.2005.00344.x)>). Please note: The 'MCPMod' package will not be further developed, all future development of
+the MCP-Mod methodology will be done in `r pkg("DoseFinding")`.
     
--   `r pkg("TEQR", priority = "core")` The target
-    equivalence range (TEQR) design is a frequentist implementation of
-    the modified toxicity probability interval (mTPI) design and a
-    competitor to the standard 3+3 design (3+3). The 3+3 is the work
-    horse design in Phase I. It is good at determining if a safe dose
-    exits, but provides poor accuracy and precision in estimating the
-    level of toxicity at the maximum tolerated dose (MTD). The TEQR is
-    better than the 3+3 when compared on: 1) the number of times the
-    dose at or nearest the target toxicity level was selected as the
-    MTD, 2) the number of subjects assigned to doses levels, at or
-    nearest the MTD, and 3) the overall trial DLT rate. TEQR more
-    accurately and more precisely estimates the rate of toxicity at the
-    MTD because a larger number of subjects are studied at the MTD dose.
-    The TEQR on average uses fewer subjects and provide reasonably
-    comparable results to the continual reassessment method (CRM) in the
-    number of times the dose at or nearest the target toxicity level was
-    selected as the MTD and the number of subjects assigned doses, at,
-    or nearest the target and in overall DLT rate.
+-   `r pkg("TEQR", priority = "core")` The TEQR package contains software to calculate the operating characteristics for the TEQR and the ACT designs.  The TEQR (toxicity equivalence range) design is a toxicity based cumulative cohort design with added safety rules; the ACT (Activity constrained for toxicity) design is also a cumulative cohort design with additional safety rules with the unique feature of this design is that dose is escalated based on lack of activity rather than on lack of toxicity and is de-escalated only if an unacceptable level of toxicity is experienced.
     
--   `r pkg("BOIN")` The Bayesian optimal interval (BOIN) design is a novel phase I clinical trial design for finding the maximum tolerated dose (MTD). It can be used to design both single-agent and drug-combination trials. The BOIN design is motivated by the top priority and concern of clinicians when testing a new drug, which is to effectively treat patients and minimize the chance of exposing them to subtherapeutic or overly toxic doses. The prominent advantage of the BOIN design is that it achieves simplicity and superior performance at the same time. The BOIN design is algorithm-based and can be implemented in a simple way similar to the traditional 3+3 design. The BOIN design yields an average performance that is comparable to that of the continual reassessment method (CRM, one of the best model-based designs) in terms of selecting the MTD, but has a substantially lower risk of assigning patients to subtherapeutic or overly toxic doses. For tutorial, please check Yan et al. (2020) <[doi:10.18637/jss.v094.i13](https://doi.org/10.18637/jss.v094.i13)>.
+-   `r pkg("BOIN")` The Bayesian optimal interval (BOIN) design is a novel phase I clinical trial design for finding the maximum tolerated dose (MTD). It can be used to design both single-agent and drug-combination trials. The BOIN design yields an average performance that is comparable to that of the continual reassessment method (CRM, one of the best model-based designs) in terms of selecting the MTD, but has a substantially lower risk of assigning patients to subtherapeutic or overly toxic doses. For tutorial, please check Yan et al. (2020) <[doi:10.18637/jss.v094.i13](https://doi.org/10.18637/jss.v094.i13)>.
 
 -   `r pkg("SEARS")` A seamless design that combines phase I dose escalation based on toxicity with phase II dose expansion and dose comparison based on efficacy. A rich set of parameters can be used to explore various real scenarios. It can generate operating characteristics via simulation to examine the design's property.
 
