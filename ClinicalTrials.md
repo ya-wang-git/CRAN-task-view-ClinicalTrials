@@ -134,20 +134,9 @@ the MCP-Mod methodology will be done in `r pkg("DoseFinding")`.
 
 #### *Factorial Designs*
 
--   `r pkg("conf.design")` This small package contains a
-    series of simple tools for constructing and manipulating confounded
-    and fractional factorial designs.
+-   `r pkg("conf.design")` This small package contains a series of simple tools for constructing and manipulating confounded and fractional factorial designs.
 
--   `r pkg("FrF2")` This package creates regular and
-    non-regular Fractional Factorial designs. Furthermore, analysis
-    tools for Fractional Factorial designs with 2-level factors are
-    offered (main effects and interaction plots for all factors
-    simultaneously, cube plot for looking at the simultaneous effects of
-    three factors, full or half normal plot, alias structure in a more
-    readable format than with the built-in function alias). The package
-    is currently subject to intensive development. While much of the
-    intended functionality is already available, some changes and
-    improvements are still to be expected.
+-   `r pkg("FrF2")` This package creates regular and non-regular Fractional Factorial designs. Furthermore, analysis tools for Fractional Factorial designs with 2-level factors are offered (main effects and interaction plots for all factors simultaneously, cube plot for looking at the simultaneous effects of three factors, full or half normal plot, alias structure in a more readable format than with the built-in function alias).
     
 
 #### *Group Sequential Designs*
