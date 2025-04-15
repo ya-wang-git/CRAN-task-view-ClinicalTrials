@@ -42,36 +42,25 @@ repository linked above.
 
 -   `r pkg("adaptr")` facilitates simulation and comparison of adaptive clinical trial designs. It supports a flexible number of arms, use of a common control arm, pre-specified and user-defined outcome- and posterior probability distribution-generating functions, fixed- and response-adaptive randomisation, various adaptation rules for arm dropping and stopping, calculation of trial design performance metrics, and visualisation of results.
     
--   `r pkg("adaptTest", priority = "core")` The functions
-    defined in this program serve for implementing adaptive two-stage
-    tests. Currently, four tests are included: Bauer and Koehne (1994),
-    Lehmacher and Wassmer (1999), Vandemeulebroecke (2006), and the
-    horizontal conditional error function. User-defined tests can also
-    be implemented.
+-   `r pkg("adaptTest", priority = "core")` The functions defined in this program serve for implementing adaptive two-stage tests.  Currently, four tests are included: Bauer and Koehne (1994), Lehmacher and Wassmer (1999), Vandemeulebroecke (2006), and the horizontal conditional error function. User-defined tests can also be implemented.
     
--   `r pkg("adestr")` provides methods to evaluate the performance characteristics of various point and interval estimators for optimal adaptive two-stage designs. Specifically, this package is written to work with trial designs created by the `adoptr` package (Kunzmann et al. (2021) <[doi:10.18637/jss.v098.i09](https://doi.org/10.18637/jss.v098.i09)>; Pilz et al. (2021) <[doi:10.1002/sim.8953](https://doi.org/10.1002/sim.8953)>). Apart from the a priori evaluation of performance characteristics, this package also allows for the evaluation of the implemented estimators on real datasets, and it implements methods to calculate p-values.
+-   `r pkg("adestr")` provides methods to evaluate the performance characteristics of various point and interval estimators for optimal adaptive two-stage designs. Specifically, this package is written to work with trial designs created by the `adoptr` package (Kunzmann et al. (2021) <[doi:10.18637/jss.v098.i09](https://doi.org/10.18637/jss.v098.i09)>; Pilz et al. (2021) <[doi:10.1002/sim.8953](https://doi.org/10.1002/sim.8953)>).
 
--   `r pkg("adpss")` provides the functions for planning and conducting a clinical trial with adaptive sample size determination. Maximal statistical efficiency will be exploited even when dramatic or multiple adaptations are made. Such a trial consists of adaptive determination of sample size at an interim analysis and implementation of frequentist statistical test at the interim and final analysis with a prefixed significance level. The required assumptions for the stage-wise test statistics are independent and stationary increments and normality. Predetermination of adaptation rule is not required.
-
--   `r pkg("AGSDest")`{#AGSDest} provides tools  and functions for parameter estimation in adaptive group sequential trials.
+-   `r pkg("adpss")` provides the functions for planning and conducting a clinical trial with adaptive sample size determination. Maximal statistical efficiency will be exploited even when dramatic or multiple adaptations are made. 
 
 -   `r pkg("asd", priority = "core")`{#asd} runs simulations for adaptive seamless designs with and without early outcomes for treatment selection and subpopulation type designs. It allows sample size modification in subpopulation selection.
 
--   `r pkg("ASSISTant")` Clinical trial design for subgroup selection in three-stage group sequential trial as described in Lai et al. (2014) <[doi:10.1016/j.cct.2014.09.001](https://doi.org/10.1016/j.cct.2014.09.001)>. Includes facilities for design, exploration and analysis of such trials. An implementation of the initial DEFUSE-3 trial is also provided as a vignette.
+-   `r pkg("ASSISTant")` Clinical trial design for subgroup selection in three-stage group sequential trial as described in Lai et al. (2014) <[doi:10.1016/j.cct.2014.09.001](https://doi.org/10.1016/j.cct.2014.09.001)>. It includes facilities for design, exploration and analysis of such trials.
 
--   `r pkg("BATSS")` Defines operating characteristics of Bayesian Adaptive Trials considering a generalised linear model response via Monte Carlo simulations of Bayesian GLM fitted via integrated Laplace approximations (INLA).
-  
--   `r pkg("BayesCT")`{#BayesCT} Simulation and analysis of Bayesian adaptive clinical trials for binomial, Gaussian, and time-to-event data types, incorporates historical data and allows early stopping for futility or early success. The package uses novel and efficient Monte Carlo methods for estimating Bayesian posterior probabilities, evaluation of loss to follow up, and imputation of incomplete data. The package has the functionality for dynamically incorporating historical data into the analysis via the power prior or non-informative priors.
+-   `r pkg("BDP2")` Tools and workflow to choose design parameters in Bayesian adaptive single-arm phase II trial designs with binary endpoint (response, success) with possible stopping for efficacy and futility at interim analyses; and also contains routines to determine and visualize operating characteristics. See Kopp-Schneider et al. (2018) <[doi:10.1002/bimj.201700209](https://doi.org/10.1002/bimj.201700209)>. 
 
--   `r pkg("BDP2")` Tools and workflow to choose design parameters in Bayesian adaptive single-arm phase II trial designs with binary endpoint (response, success) with possible stopping for efficacy and futility at interim analyses. Also contains routines to determine and visualize operating characteristics. See Kopp-Schneider et al. (2018) <[doi:10.1002/bimj.201700209](https://doi.org/10.1002/bimj.201700209)>. 
+-   `r pkg("Cats")` {#Cats} simulates a cohort platform trial design whereby every cohort consists of two arms (control and experimental treatment). Endpoints are co-primary binary endpoints and decisions are made using either Bayesian or frequentist decision rules; and realistic trial trajectories are simulated with the operating characteristics of the designs calculated.
 
--   `r pkg("Cats")`{#Cats} simulates a cohort platform trial design whereby every cohort consists of two arms (control and experimental treatment). Co-primary binary endpoints are used, and decisions at the interim or final analysis are made using either Bayesian or frequentist decision rules. Several options for sharing control data across cohorts are implemented. Realistic trial trajectories are simulated, and the operating characteristics of the designs are calculated. This package was used to derive the simulation results in Meyer et al. (2023) <[doi:10.1371/journal.pone.0281674](https://doi.org/10.1371/journal.pone.0281674)>.
+-   `r pkg("CohortPlat")`{#CohortPlat} is a collection of functions dedicated to simulating staggered entry platform trials whereby the treatment under investigation is a combination of two active compounds. A more detailed description of the design can be found in Meyer et al. <[doi:10.1002/pst.2194](https://doi:10.1002/pst.2194)> and a manual in Meyer et al. <[doi:10.48550/arXiv.2202.02182](https://doi:10.48550/arXiv.2202.02182)>.
 
--   `r pkg("CohortPlat")`{#CohortPlat} facilitates the simulation of cohort platform trials with binary endpoints, where each cohort consists of a combination treatment, the respective monotherapies, and control. Bayesian decision rules are used at the interim analysis (early futility or efficacy based on a surrogate endpoint) and at the final analysis to declare the combination therapy successful or futile. Sharing of the control and the backbone monotherapy data across cohorts is possible. The package offers extensive flexibility with respect to both platform trial trajectories, as well as treatment effect scenarios, and decision rules. This package was used to derive the simulation results in Meyer et al. (2022) <[doi:10.1002/pst.2194](https://doi.org/10.1002/pst.2194)>.
+-   `r pkg("esDesign")`{#esDesign} is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) <[doi:10.1016/j.cct.2020.106216](https://doi.org/10.1016/j.cct.2020.106216)>. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR), AED3-SSR (or ES3-SSR); additionally, several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) <[doi:10.1177/1740774513503739](https://doi.org/10.1177/1740774513503739)>, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995).
 
--   `r pkg("esDesign")`{#esDesign} is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) <[doi:10.1016/j.cct.2020.106216](https://doi.org/10.1016/j.cct.2020.106216)>. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR) and AED3-SSR (or ES3-SSR). In addition, this package also contains several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) <[doi:10.1177/1740774513503739](https://doi.org/10.1177/1740774513503739)>, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995), and some useful functions. In details, we can calculate the futility and/or efficacy stopping boundaries, the sample size required, calibrate the value of the threshold of the difference between subgroup-specific test statistics, conduct the simulation studies in AED, SSR, AED1-SSR, AED2-SSR and AED3-SSR.
-
--   `r pkg("eselect")` Endpoint selection and sample size reassessment for multiple binary endpoints based on blinded and/or unblinded data. Trial design that allows an adaptive modification of the primary endpoint based on blinded information obtained at an interim analysis. The decision rule chooses the endpoint with the lower estimated required sample size. Additionally, the sample size is reassessed using the estimated event probabilities and correlation between endpoints. The implemented design is proposed in Roig et al. (2022) <[doi:10.48550/arXiv.2206.09639](https://doi.org/10.48550/arXiv.2206.09639)>.
+-   `r pkg("eselect")` Endpoint selection and sample size reassessment for multiple binary endpoints based on blinded and/or unblinded data.  The implemented design is proposed in Roig et al. (2022) <[doi:10.48550/arXiv.2206.09639](https://doi.org/10.48550/arXiv.2206.09639)>.
 
 -   `r pkg("gMCP")` provides functions and a graphical user interface for graphical described multiple test procedures. Examples of weighted tests that are available in gMCP are the weighted Bonferroni, parametric and Simes tests.
 
@@ -83,22 +72,11 @@ repository linked above.
 
 -   `r pkg("MAMS")` designs multi-arm multi-stage studies with (asymptotically) normal endpoints and known variance. It could be used to determine the boundaries of a multi-arm multi-stage study for a given boundary shape and finds the required number of subjects, as well as simulates multi-arm multi-stage designs and estimates power and expected sample size. 
 
--   `r pkg("MinEDfind")`{#MinEDfind} The nonparametric two-stage
-    Bayesian adaptive design is a novel phase II clinical trial design
-    for finding the minimum effective dose (MinED). This design is
-    motivated by the top priority and concern of clinicians when testing
-    a new drug, which is to effectively treat patients and minimize the
-    chance of exposing them to subtherapeutic or overly toxic doses. It
-    is used to design single-agent trials.
+-   `r pkg("MinEDfind")`{#MinEDfind} The nonparametric two-stage Bayesian adaptive design is a novel phase II clinical trial design for finding the minimum effective dose (MinED) in single-agent trials. This design is motivated by the top priority and concern of clinicians when testing a new drug, which is to effectively treat patients and minimize the chance of exposing them to subtherapeutic or overly toxic doses. 
 
--   `r pkg("NCC")`{#NCC} is an R package that allows users to simulate platform trials and perform treatment–control comparisons using non-concurrent control data (Krotka et al. (2023) <[doi:10.1016/j.softx.2023.101437](https://doi.org/10.1016/j.softx.2023.101437)>). The package supports simulation of complex platform trial designs with continuous or binary endpoints and a flexible number of treatment arms that enter the trial at different time points. The software accommodates different treatment effects among the arms and includes several patterns for time trends. Analytic approaches currently implemented in the package cover frequentist modes (e.g., regression model adjusting for time as a fixed effect mixed model adjusting for time as a random factor, and regression splines), the Bayesian time machine a meta-analytic predictive prior separate analysis, and pooled analysis.
+-   `r pkg("NCC")`{#NCC} is an R package that allows users to simulate platform trials and perform treatment–control comparisons using non-concurrent control data (Krotka et al. (2023) <[doi:10.1016/j.softx.2023.101437](https://doi.org/10.1016/j.softx.2023.101437)>). The package supports simulation of complex platform trial designs with continuous or binary endpoints and a flexible number of treatment arms that enter the trial at different time points and accommodates different treatment effects among the arms and includes several patterns for time trends using frequentist approach (e.g., regression model adjusting for time as a fixed effect mixed model adjusting for time as a random factor, and regression splines), the Bayesian time machine a meta-analytic predictive prior separate analysis, and pooled analysis.
 
--   `r pkg("rpact", priority = "core")`{#rpact} Design and analysis of confirmatory
-    adaptive clinical trials with continuous, binary, and survival
-    endpoints according to the methods described in the monograph by
-    Wassmer and Brannath (2016). This includes classical group
-    sequential as well as multi-stage adaptive hypotheses tests that are
-    based on the combination testing principle.
+-   `r pkg("rpact", priority = "core")`{#rpact} Design and analysis of confirmatory adaptive clinical trials with continuous, binary, and survival endpoints according to the methods described in the monograph by Wassmer and Brannath (2016). This includes classical group sequential as well as multi-stage adaptive hypotheses tests that are based on the combination testing principle.
 
 -   `r pkg("SAME")`{#SAME} Design a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation. Wason et al. (2015) <[doi:10.1038/bjc.2015.278](https://doi.org/10.1038/bjc.2015.278)>. Yin et al. (2018) <[doi:10.1007/s12561-017-9199-7](https://doi.org/10.1007/s12561-017-9199-7)>. Yuan et al. (2016) <[doi:10.1002/sim.6971](https://doi.org/10.1002/sim.6971)>.
 
@@ -109,15 +87,7 @@ repository linked above.
 
 -   `r pkg("PK")` contains methods to estimate PK parameters using non-compartmental theory and provides facilities to obtain confidence intervals and perform tests for single analysis as well as bioequivalence studies.
 
--   `r pkg("PowerTOST", priority = "core")`{#PowerTOST} contains
-    functions to calculate power and sample size for various study
-    designs used for bioequivalence studies. See function
-    known.designs() for study designs covered. Moreover the package
-    contains functions for power and sample size based on 'expected'
-    power in case of uncertain (estimated) variability. Added are
-    functions for the power and sample size for the ratio of two means
-    with normally distributed data on the original scale (based on
-    Fieller's confidence ('fiducial') interval).
+-   `r pkg("PowerTOST", priority = "core")`{#PowerTOST} contains functions to calculate power and sample size for various study designs used for bioequivalence studies. See function known.designs() for study designs covered. Moreover the package contains functions for power and sample size based on 'expected' power in case of uncertain (estimated) variability. Added are functions for the power and sample size for the ratio of two means with normally distributed data on the original scale (based on Fieller's confidence ('fiducial') interval).
 
 -   `r pkg("replicateBE")` Performs comparative
     bioavailability calculations for Average Bioequivalence with
