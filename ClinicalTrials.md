@@ -303,15 +303,10 @@ sizes. Examples from the book are given.
 
 #### *Missing Data Imputation*
 
--   `r pkg("mice")` implements multiple imputation by chained equations using 
-     Fully Conditional Specification (FCS) implemented by the MICE algorithm as 
-     described in Van Buuren and Groothuis-Oudshoorn (2011) 
-     <[doi:10.18637/jss.v045.i03](https://doi.org/10.18637/jss.v045.i03)>
+-   `r pkg("mice")` implements multiple imputation by chained equations using Fully Conditional Specification (FCS) implemented by the MICE algorithm as 
+described in Van Buuren and Groothuis-Oudshoorn (2011) <[doi:10.18637/jss.v045.i03](https://doi.org/10.18637/jss.v045.i03)>
 
--   `r pkg("rbmi")` implements standard and reference based multiple 
-    imputation allowing for the imputation of longitudinal datasets using 
-    predefined strategies. The package is described in Gower-Page et al. (2022) 
-    <[doi: 10.21105/joss.04251](https://doi.org/10.21105/joss.04251)>.
+-   `r pkg("rbmi")` implements standard and reference based multiple imputation allowing for the imputation of longitudinal datasets using predefined strategies. The package is described in Gower-Page et al. (2022) <[doi: 10.21105/joss.04251](https://doi.org/10.21105/joss.04251)>.
     
 -   `r pkg("remiod")` implements Reference-based multiple imputation of ordinal and binary responses under Bayesian framework, as described in Wang and Liu (2022) <[doi:10.48550/arXiv.2203.02771](https://doi.org/10.48550/arXiv.2203.02771)>. Methods for missing-not-at-random include Jump-to-Reference (J2R), Copy Reference (CR), and Delta Adjustment which can generate tipping point analysis.
     
