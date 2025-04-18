@@ -140,29 +140,16 @@ the MCP-Mod methodology will be done in `r pkg("DoseFinding")`.
     
 
 #### *Group Sequential Designs*
-
--   [`r pkg("AGSDest")`](#AGSDest).
     
--   `r pkg("clinfun", priority = "core")`{#clinfun} has
-    functions for both design and analysis of clinical trials. For phase
-    II trials, it has functions to calculate sample size, effect size,
-    and power based on Fisher's exact test, the operating
-    characteristics of a two-stage boundary, Optimal and Minimax 2-stage
-    Phase II designs given by Richard Simon, the exact 1-stage Phase II
-    design and can compute a stopping rule and its operating
-    characteristics for toxicity monitoring based repeated significance
-    testing. For phase III trials, it can calculate sample size for
-    group sequential designs.    
+-   `r pkg("clinfun", priority = "core")`{#clinfun} has functions for both design and analysis of clinical trials. For phase II trials, it has functions to calculate sample size, effect size, and power based on Fisher's exact test, the operating characteristics of a two-stage boundary, Optimal and Minimax 2-stage Phase II designs given by Richard Simon, the exact 1-stage Phase II design and can compute a stopping rule and its operating characteristics for toxicity monitoring based repeated significance testing; and can calculate sample size for Phase III group sequential designs.    
     
 -   `r pkg("GroupSeq")` computes probabilities related to group sequential designs for normally distributed test statistics. Enables to derive critical boundaries, power, drift, and confidence intervals of such designs. Supports the alpha spending approach by Lan-DeMets (1994) <[doi:10.1002/sim.4780131308](https://doi.org/10.1002/sim.4780131308)>.  
 
 -   `r pkg("gsDesign")` derives group sequential clinical trial designs and describes their properties. Particular focus on time-to-event, binary, and continuous outcomes. Largely based on methods described in the book *Group Sequential Methods with Applications to Clinical Trials* by Jennison et al. (2000) (ISBN:0-8493-0316-8).
 
--   `r pkg("ldbounds", priority = "core")` uses Lan-DeMets
-    Method for group sequential trial; its functions calculate bounds
-    and probabilities of a group sequential trial.
+-   `r pkg("ldbounds", priority = "core")` uses Lan-DeMets Method for group sequential trial; its functions calculate bounds and probabilities of a group sequential trial.
 
--   `r pkg("lrstat")`{#lrstat} performs power and sample size calculation for non-proportional hazards model using the Fleming-Harrington family of weighted log-rank tests. The package can also be used for continuous, binary, and count data. For continuous data, it can handle missing data through mixed-model for repeated measures (MMRM). In crossover designs, it can estimate direct treatment effects while accounting for carryover effects. For binary data, it can design Simon's 2-stage, modified toxicity probability-2 (mTPI-2), and Bayesian optimal interval (BOIN) trials. For count data, it can design group sequential trials for negative binomial endpoints with censoring. Additionally, it facilitates group sequential equivalence trials for all supported data types. Moreover, it can design adaptive group sequential trials for changes in sample size, error spending function, number and spacing or future looks. Finally, it offers various options for adjusted p-values, including graphical and gatekeeping procedures.
+-   `r pkg("lrstat")`{#lrstat} performs power and sample size calculation for non-proportional hazards model using the Fleming-Harrington family of weighted log-rank tests. The package can also be used for continuous, binary, and count data. 
 
 -   [`r pkg("rpact", priority = "core")`](#rpact).
 
