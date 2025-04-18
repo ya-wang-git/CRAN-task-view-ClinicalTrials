@@ -271,15 +271,13 @@ sizes. Examples from the book are given.
 
 #### *Longitudinal Data Analysis*
 
--   `r pkg("brms.mmrm")` leverages 'brms' to run MMRMs, and it supports a simplified interfaced to reduce difficulty and align with the best practices of the life sciences.
+-   `r pkg("brms.mmrm")` is a powerful and versatile package for fitting Bayesian regression models.  It leverages 'brms' to run MMRMs, and it supports a simplified interfaced to reduce difficulty and align with the best practices of the life sciences.
 
 -   `r pkg("glmmTMB")` fits linear and generalized linear mixed models with various extensions, including zero-inflation.
 
 -   `r pkg("lme4")` fits linear and generalized linear mixed-effects models.
 
--   `r pkg("mmrm")` Implements mixed models for repeated measures (MMRM), 
-    a popular choice for analyzing longitudinal continuous outcomes in 
-    randomized clinical trials and beyond.
+-   `r pkg("mmrm")` Implements mixed models for repeated measures (MMRM), a popular choice for analyzing longitudinal continuous outcomes in randomized clinical trials and beyond.
 
 -   [`r pkg("multcomp")`](#multcomp).
     
