@@ -321,11 +321,7 @@ described in Van Buuren and Groothuis-Oudshoorn (2011) <[doi:10.18637/jss.v045.i
 
 -   `r pkg("rpsftm")` provides functions to fit a rank preserving structural failure time model to a two-arm clinical trial with survival outcomes.
     
--   `r pkg("survival", priority = "core")` contains
-    descriptive statistics, two-sample tests, parametric accelerated
-    failure models, Cox model. Delayed entry (truncation) allowed for
-    all models; interval censoring for parametric models. Case-cohort
-    designs.
+-   `r pkg("survival", priority = "core")` contains descriptive statistics, two-sample tests, parametric accelerated failure models, Cox model. Delayed entry (truncation) allowed for all models; interval censoring for parametric models. Case-cohort designs.
   
 -   [`r pkg("rpact", priority = "core")`](#rpact).
 
