@@ -250,37 +250,21 @@ sizes. Examples from the book are given.
 
 #### *General Analysis*
 
--   `r pkg("coin")` offers conditional inference procedures
-    for the general independence problem including two-sample, K-sample
-    (non-parametric ANOVA), correlation, censored, ordered and
-    multivariate problems.
+-   `r pkg("coin")` offers conditional inference procedures for the general independence problem including two-sample, K-sample (non-parametric ANOVA), correlation, censored, ordered and multivariate problems.
     
--   `r pkg("ctrdata")` is a system for querying, retrieving and analyzing 
-    protocol- and results-related information on clinical trials from four public registers.
+-   `r pkg("ctrdata")` is a system for querying, retrieving and analyzing protocol- and results-related information on clinical trials from four public registers.
     
--   `r pkg("epibasix")` has functions such as `diffdetect`,
-    `n4means` for continuous outcome and `n4props` and functions for
-    matched pairs analysis in randomized trials.
+-   `r pkg("epibasix")` has functions such as `diffdetect`, `n4means` for continuous outcome and `n4props` and functions for matched pairs analysis in randomized trials.
     
--   `ae.dotplot` from `r pkg("HH")` shows a two-panel
-    display of the most frequently occurring adverse events in the
-    active arm of a clinical study.
+-   `r pkg("HH")` is support software for Statistical Analysis and Data Display (Second Edition, Springer, ISBN 978-1-4939-2121-8, 2015) and (First Edition, Springer, ISBN 0-387-40270-5, 2004) by Richard M. Heiberger and Burt Holland. `ae.dotplot` shows a two-panel display of the most frequently occurring adverse events in the active arm of a clinical study.
 
 -   `r pkg("logistf")` Firth's Bias-Reduced Logistic Regression. Firth's method was proposed as ideal solution to the problem of separation in logistic regression.
 
 -   `r pkg("maic")` In MAIC, unbiased comparison between outcomes of two trials is facilitated by weighting the subject-level outcomes of one trial with weights derived such that the weighted aggregate measures of the prognostic or effect modifying variables are equal to those of the sample in the comparator trial.
 
--   `r pkg("multcomp")`{#multcomp} covers simultaneous tests and
-    confidence intervals for general linear hypotheses in parametric
-    models, including linear, generalized linear, linear mixed effects,
-    and survival models.
+-   `r pkg("multcomp")`{#multcomp} covers simultaneous tests and confidence intervals for general linear hypotheses in parametric models, including linear, generalized linear, linear mixed effects, and survival models.
 
--   Base R, especially the `r pkg("stats")` package, has a lot of functionality
-    useful for design and analysis of clinical trials. For example,
-    `chisq.test`, `prop.test`, `binom.test`, `t.test`, `wilcox.test`,
-    `kruskal.test`, `mcnemar.test`, `cor.test`, `power.t.test`,
-    `power.prop.test`, `power.anova.test`, `lm`, `glm`, `nls`, `anova`
-    (and its `lm` and `glm` methods) among many others.
+-   Base R, especially the `r pkg("stats")` package, has a lot of functionality useful for design and analysis of clinical trials. For example, `chisq.test`, `prop.test`, `binom.test`, `t.test`, `wilcox.test`, `kruskal.test`, `mcnemar.test`, `cor.test`, `power.t.test`, `power.prop.test`, `power.anova.test`, `lm`, `glm`, `nls`, `anova` (and its `lm` and `glm` methods) among many others.
     
 -   `r pkg("TestDesign")` uses the optimal test design approach by Birnbaum (1968) (ISBN:9781593119348) and van der Linden (2018) <[doi:10.1201/9781315117430](https://doi.org/10.1201/9781315117430)> to construct fixed, adaptive, and parallel tests. Supports the following mixed-integer programming (MIP) solver packages: `Rsymphony`, `gurobi`, `lpSolve`, and `Rglpk`. The `gurobi` package is not available from CRAN; see <https://www.gurobi.com/downloads/>.
     
