@@ -229,19 +229,11 @@ sizes. Examples from the book are given.
     
 -   [`r pkg("dfped")`](#dfped).
     
--   [`r pkg("dfpk")`](#dfpk). 
-    
 -   [`r pkg("esDesign")`](#esDesign).   
 
 -   [`r pkg("ewoc")`](#ewoc). 
 
--   `r pkg("Mediana")` Provides a general framework for
-    clinical trial simulations based on the Clinical Scenario Evaluation
-    (CSE) approach. The package supports a broad class of data models
-    (including clinical trials with continuous, binary, survival-type
-    and count-type endpoints as well as multivariate outcomes that are
-    based on combinations of different endpoints), analysis strategies
-    and commonly used evaluation criteria.
+-   `r pkg("Mediana")` Provides a general framework for clinical trial simulations based on the Clinical Scenario Evaluation (CSE) approach. The package supports a broad class of data models (including clinical trials with continuous, binary, survival-type and count-type endpoints as well as multivariate outcomes that are based on combinations of different endpoints), analysis strategies and commonly used evaluation criteria.
 
 -   [`r pkg("NCC")`](#NCC).
 
@@ -249,11 +241,7 @@ sizes. Examples from the book are given.
 
 -   [`r pkg("rpact", priority = "core")`](#rpact).
 
--   `r pkg("simglm")` Simulates regression models, including
-    both simple regression and generalized linear mixed models with up
-    to three level of nesting. Power simulations that are flexible
-    allowing the specification of missing data, unbalanced designs, and
-    different random error distributions are built into the package.
+-   `r pkg("simglm")` Simulates regression models, including both simple regression and generalized linear mixed models with up to three level of nesting. Power simulations that are flexible allowing the specification of missing data, unbalanced designs, and different random error distributions are built into the package.
 
 -   [`r pkg("UnifiedDoseFinding")`](#UnifiedDoseFinding).
 
