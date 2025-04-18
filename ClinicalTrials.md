@@ -290,21 +290,15 @@ sizes. Examples from the book are given.
     
 -   `r pkg("metafor")` is a comprehensive package for meta-analyses, providing functions to calculate effect sizes, fit various (e.g., fixed-, and random-effects) models, perform moderator/meta-regression analyses, create meta-analytical plots, apply specialized methods (e.g., Mantel-Haenszel method, Peto's method), and fit meta-analytic multivariate/multilevel models accounting for non-independent sampling errors or clustering.
     
--   `r pkg("metaLik")` Likelihood inference in meta-analysis
-    and meta-regression models.
+-   `r pkg("metaLik")` Likelihood inference in meta-analysis and meta-regression models.
 
--   `r pkg("metasens")` is a package for statistical methods
-    to model and adjust for bias in meta-analysis
+-   `r pkg("metasens")` is a package for statistical methods to model and adjust for bias in meta-analysis.
     
 -   `r pkg("netmeta")` provides a comprehensive set of functions for frequentist methods in network meta-analysis, including additive models, analysis of binary data, ranking methods (SUCRA, P-scores), consistency checks, league tables, funnel plots, evidence flow measures, network graphs, treatment ranking diagrams, contribution matrices, meta-regression, and subgroup analysis.
 
 -   `r pkg("RBesT")` Tool-set to support Bayesian evidence synthesis. It facilitate the use of historical information in clinical trials. Once relevant historical information has been identified, it supports the derivation of informative priors via the Meta-Analytic-Predictive (MAP) approach and the evaluation of the trial’s operating characteristics.
 
--   `r pkg("rmeta")` has functions for simple fixed and
-    random effects meta-analysis for two-sample comparisons and
-    cumulative meta-analyses. Draws standard summary plots, funnel
-    plots, and computes summaries and tests for association and
-    heterogeneity.
+-   `r pkg("rmeta")` has functions for simple fixed and random effects meta-analysis for two-sample comparisons and cumulative meta-analyses. Draws standard summary plots, funnel plots, and computes summaries and tests for association and heterogeneity.
     
 
 #### *Missing Data Imputation*
