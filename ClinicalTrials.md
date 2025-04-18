@@ -185,28 +185,11 @@ a PDF file of randomization cards.
 
 #### *Sample Size and Power Calculations*
 
--   `r pkg("BayesCTDesign")` A set of functions to help clinical trial researchers calculate power and sample size for two-arm Bayesian randomized clinical trials that do or do not incorporate historical control data. At some point during the design process, a clinical trial researcher who is designing a basic two-arm Bayesian randomized clinical trial needs to make decisions about power and sample size within the context of hypothesized treatment effects. Through simulation, the simple_sim() function will estimate power and other user specified clinical trial characteristics at user specified sample sizes given user defined scenarios about treatment effect,control group characteristics, and outcome. If the clinical trial researcher has access to historical control data, then the researcher can design a two-arm Bayesian randomized clinical trial that incorporates the historical data. In such a case, the researcher needs to work through the potential consequences of historical and randomized control differences on trial characteristics, in addition to working through issues regarding power in the context of sample size, treatment effect size, and outcome. If a researcher designs a clinical trial that will incorporate historical control data, the researcher needs the randomized controls to be from the same population as the historical controls. What if this is not the case when the designed trial is implemented? During the design phase, the researcher needs to investigate the negative effects of possible historic/randomized control differences on power, type one error, and other trial characteristics. Using this information, the researcher should design the trial to mitigate these negative effects. Through simulation, the historic_sim() function will estimate power and other user specified clinical trial characteristics at user specified sample sizes given user defined scenarios about historical and randomized control differences as well as treatment effects and outcomes. The results from historic_sim() and simple_sim() can be printed with print_table() and graphed with plot_table() methods. Outcomes considered are Gaussian, Poisson, Bernoulli, Lognormal, Weibull, and Piecewise Exponential. The methods are described in Eggleston et al. (2021) <[doi:10.18637/jss.v100.i21](https://doi.org/10.18637/jss.v100.i21)>. 
-
--   `r pkg("binomSamSize")` is a suite of functions for
-    computing confidence intervals and necessary sample sizes for the
-    success probability parameter Bernoulli distribution under simple
-    random sampling or under pooled sampling.
+-   `r pkg("BayesCTDesign")` A set of functions to help clinical trial researchers calculate power and sample size for two-arm Bayesian randomized clinical trials that do or do not incorporate historical control data.  Outcomes considered are Gaussian, Poisson, Bernoulli, Lognormal, Weibull, and Piecewise Exponential. The methods are described in Eggleston et al. (2021) <[doi:10.18637/jss.v100.i21](https://doi.org/10.18637/jss.v100.i21)>. 
     
 -   [`r pkg("clinfun", priority = "core")`](#clinfun). 
-
--   `r pkg("clusterPower")` Calculate power for cluster
-    randomized trials (CRTs) that compare two means, two proportions, or
-    two counts using closed-form solutions. In addition, calculate power
-    for cluster randomized crossover trials using Monte Carlo methods.
-    For more information, see Reich et al. (2012)
-    <[doi:10.1371/journal.pone.0035564](https://dx.doi.org/10.1371/journal.pone.0035564)>.
     
--   `r pkg("cosa")` Implements bound constrained optimal
-    sample allocation (BCOSA) framework described in Bulus & Dong (2019)
-    for power analysis of multilevel regression discontinuity designs
-    (MRDDs) and multilevel randomized trials (MRTs) with continuous
-    outcomes. Separate tools for statistical power and minimum
-    detectable effect size computations are provided.
+-   `r pkg("cosa")` Implements bound constrained optimal sample allocation (BCOSA) framework described in Bulus & Dong (2019) for power analysis of multilevel regression discontinuity designs (MRDDs) and multilevel randomized trials (MRTs) with continuous outcomes. Separate tools for statistical power and minimum detectable effect size computations are provided.
     
 -   `r pkg("longpower", priority = "core")`Compute power and sample size for linear models of longitudinal data. Supported models include mixed-effects models and models fit by generalized least squares and generalized estimating equations. The package is described in Iddi and Donohue (2022) <[doi:10.32614/RJ-2022-022](https://journal.r-project.org/articles/RJ-2022-022/)>. 
     
@@ -214,42 +197,18 @@ a PDF file of randomization cards.
     
 -   [`r pkg("PowerTOST", priority = "core")`](#PowerTOST).
     
--   `r pkg("PowerUpR")` Includes tools to calculate
-    statistical power, minimum detectable effect size (MDES), MDES
-    difference (MDESD), and minimum required sample size for various
-    multilevel randomized experiments with continuous outcomes. Some of
-    the functions can assist with planning two- and three-level
-    cluster-randomized trials (CRTs) sensitive to multilevel moderation
-    and mediation (2-1-1, 2-2-1, and 3-2-1).
+-   `r pkg("PowerUpR")` Includes tools to calculate statistical power, minimum detectable effect size (MDES), MDES difference (MDESD), and minimum required sample size for various multilevel randomized experiments with continuous outcomes. Some of the functions can assist with planning two- and three-level cluster-randomized trials (CRTs) sensitive to multilevel moderation and mediation (2-1-1, 2-2-1, and 3-2-1).
     
--   `r pkg("presize")` Bland (2009) recommended to base
-    study sizes on the width of the confidence interval rather the power
-    of a statistical test. The goal of 'presize' is to provide
-    functions for such precision based sample size calculations. For a
-    given sample size, the functions will return the precision (width of
-    the confidence interval), and vice versa.
+-   `r pkg("presize")` Bland (2009) recommended to base study sizes on the width of the confidence interval rather the power of a statistical test. The goal of 'presize' is to provide functions for such precision based sample size calculations. For a given sample size, the functions will return the precision (width of the confidence interval), and vice versa.
 
--   `r pkg("pwr", priority = "core")` has power analysis
-    functions along the lines of Cohen (1988).
+-   `r pkg("pwr", priority = "core")` Power calculations along the lines of Cohen (1988) using in particular the same notations for effect
+sizes. Examples from the book are given.
     
--   `r pkg("samplesize")` computes sample size for
-    Student's t-test with equal and nonequal variances and for the
-    Wilcoxon-Mann-Whitney test for categorical data with and without
-    ties.
+-   `r pkg("samplesize")` computes sample size for Student's t-test with equal and nonequal variances and for the Wilcoxon-Mann-Whitney test for categorical data with and without ties.
     
--   `r pkg("ssanv")` is a set of functions to calculate
-    sample size for two-sample difference in means tests. Does
-    adjustments for either nonadherence or variability that comes from
-    using data to estimate parameters.
-    
--   `r pkg("ThreeArmedTrials")` Design and analyze
-    three-arm non-inferiority or superiority trials which follow a
-    gold-standard design, i.e. trials with an experimental treatment, an
-    active, and a placebo control.
+-   `r pkg("ssanv")` is a set of functions to calculate sample size for two-sample difference in means tests. Does adjustments for either nonadherence or variability that comes from using data to estimate parameters.
 
--   `r pkg("TrialSize", priority = "core")` This package has
-    more than 80 functions from the book *Sample Size Calculations in
-    Clinical Research* by Chow et al. (2007) <[doi:10.1201/9781584889830](https://doi.org/10.1201/9781584889830)>.
+-   `r pkg("TrialSize", priority = "core")` This package has more than 80 functions from the book *Sample Size Calculations in Clinical Research* by Chow et al. (2007) <[doi:10.1201/9781584889830](https://doi.org/10.1201/9781584889830)>.
 
     
 #### *Simulation*
