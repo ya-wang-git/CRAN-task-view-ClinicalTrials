@@ -156,20 +156,12 @@ the MCP-Mod methodology will be done in `r pkg("DoseFinding")`.
 
 #### *Randomization*
 
--   `r pkg("blockrand", priority = "core")` creates
-    randomizations for block random clinical trials. It can also produce
-    a PDF file of randomization cards.
+-   `r pkg("blockrand", priority = "core")` creates randomizations for block random clinical trials. It can also produce
+a PDF file of randomization cards.
 
--   `r pkg("experiment", priority = "core")` contains tools
-    for clinical experiments, e.g., a randomization tool, and it
-    provides a few special analysis options for clinical trials.
+-   `r pkg("experiment", priority = "core")` contains tools for clinical experiments, e.g., a randomization tool, and it provides a few special analysis options for clinical trials.
     
--   `r pkg("randomizeR")` This tool enables the user to
-    choose a randomization procedure based on sound scientific criteria.
-    It comprises the generation of randomization sequences as well the
-    assessment of randomization procedures based on carefully selected
-    criteria. Furthermore, `randomizeR` provides a function for the
-    comparison of randomization procedures.
+-   `r pkg("randomizeR")` This tool enables the user to choose a randomization procedure based on sound scientific criteria. It comprises the generation of randomization sequences as well the assessment of randomization procedures based on carefully selected criteria.
 
 
 #### *Response Adaptive Randomization*
