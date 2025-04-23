@@ -328,37 +328,22 @@ described in Van Buuren and Groothuis-Oudshoorn (2011) <[doi:10.18637/jss.v045.i
     
 #### *Other Analysis for Specific Designs*  
 
--   `r pkg("clinicalsignificance")` The goal of this package is to provide all 
-   necessary tools for analyses of clinical significance in clinical intervention studies. 
-   In contrast to statistical significance, which assesses if it is probable that there 
-   is a treatment effect, clinical significance can be used to determine if a treatment 
-   effect is of practical use or meaningful for patients.
+-   `r pkg("clinicalsignificance")` The goal of this package is to provide all necessary tools for analyses of clinical significance in clinical intervention studies. In contrast to statistical significance, which assesses if it is probable that there is a treatment effect, clinical significance can be used to determine if a treatment effect is of practical use or meaningful for patients.
    
--   `r pkg("clinsig")` This function calculates both
-    parametric and non-parametric versions of the Jacobson-Truax
-    estimates of clinical significance.
+-   `r pkg("clinsig")` This package contains functions to calculate both parametric and non-parametric versions of the Jacobson-Truax estimates of clinical significance.
   
--   `r pkg("MatchIt")` is an R package that selects matched samples of the original treated and control groups with similar covariate distributions.  It can be used to match exactly on covariates, to match on propensity scores, or perform a variety of other matching procedures. The package also implements a series of recommendations offered in Ho et al. (2007) <[doi:10.1093/pan/mpl013](https://doi.org/10.1093/pan/mpl013)>. After appropriately preprocessing with MatchIt, researchers can use whatever parametric model they would have used without MatchIt and produce inferences that are more robust and less sensitive to modeling assumptions. Matching methods, assessing balance, and estimating effects after balance is described in the vignettes.
+-   `r pkg("MatchIt")` is an R package that selects matched samples of the original treated and control groups with similar covariate distributions.  It can be used to match exactly on covariates, to match on propensity scores, or perform a variety of other matching procedures. The package also implements a series of recommendations offered in Ho et al. (2007) <[doi:10.1093/pan/mpl013](https://doi.org/10.1093/pan/mpl013)>.
 
--   `r pkg("nppbib")` implements a nonparametric statistical
-    test for rank or score data from partially-balanced incomplete
-    block-design experiments.
+-   `r pkg("nppbib")` implements a nonparametric statistical test for rank or score data from partially-balanced incomplete block-design experiments.
     
--   `r pkg("speff2trial", priority = "core")`, the package
-    performs estimation and testing of the treatment effect in a 2-group
-    randomized clinical trial with a quantitative or dichotomous
-    endpoint.
+-   `r pkg("speff2trial", priority = "core")` performs estimation and testing of the treatment effect in a 2-group randomized clinical trial with a quantitative or dichotomous endpoint.
     
--   `r pkg("ThreeGroups")` This package implements the
-    Maximum Likelihood estimator for three-group designs proposed by
-    Gerber et al. (2010).
+-   `r pkg("ThreeGroups")` This package implements the Maximum Likelihood estimator for three-group designs proposed by Gerber et al. (2010).
     
 
 ### Monitoring
 
--   `r pkg("accrualPlot")` Tracking accrual in clinical trials is important for trial success.
-    `accrualPlot` provides functions to aid the tracking of accrual and predict when a trial 
-    will reach it's intended sample size.
+-   `r pkg("accrualPlot")` Tracking accrual in clinical trials is important for trial success. `accrualPlot` provides functions to aid the tracking of accrual and predict when a trial will reach it's intended sample size.
     
 -   [`r pkg("asd", priority = "core")`](#asd).
 
