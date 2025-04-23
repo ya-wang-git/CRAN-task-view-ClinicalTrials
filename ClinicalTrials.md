@@ -1,9 +1,9 @@
 ---
 name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, and Analysis
-maintainer: Ya Wang, Thomas Jaki, Orla Doyle, Elias Laurin Meyer, Laura Pascasio Harris, Wilmar Igl
+maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Orla Doyle, Elias Laurin Meyer, Wilmar Igl
 email: ya.wang10@gilead.com
-version: 2024-11-07
+version: 2025-04-22
 source: https://github.com/cran-task-views/ClinicalTrials/
 ---
 
@@ -29,7 +29,7 @@ Here are several foundational books on clinical trial design and analysis that c
 
 The packages included in this task view were carefully curated through a combination of expert recommendations from the pharmaceutical industry and academia, as well as an automated CRAN search using the `pkgsearch::pkg_search()` function. The search leveraged keywords aligned with our grouping categories, such as *clinical trials, study design, adaptive design, sample size calculation*, etc. Packages were considered within scope if they offered tools to facilitate the design, monitoring, or analysis of clinical trials. 
 
-Some task views may include packages that are also relevant to clinical trials and will be listed within the grouping categories. Please refer to task views `r view("ExperimentalDesign")`, `r view("Meta-analysis")`, `r view("MissingData")`, `r view("Pharmacokinetics")`, `r view("Survival")` for a more comprehensive list of R packages related to these topics.  Note that while the [Analysis of Pharmacokinetic Data](https://cran.r-project.org/web/views/Pharmacokinetics.html) task view packages are closely related to clinical trials, they are not explicity listed under the grouping categories in this task view to avoid duplication.
+Some task views may include packages that are also relevant to clinical trials and will be listed within the grouping categories. Please refer to task views `r view("ExperimentalDesign")`, `r view("Meta-analysis")`, `r view("MissingData")`, `r view("Pharmacokinetics")`, `r view("Survival")` for a more comprehensive list of R packages related to these topics.  Note that while the [Analysis of Pharmacokinetic Data](https://cran.r-project.org/web/views/Pharmacokinetics.html) task view packages are closely related to clinical trials, they are not explicitly listed under the grouping categories in this task view to avoid duplication.
 
 Contributions are always welcome and encouraged. You can contribute by emailing the maintainer directly or by submitting an issue or pull request in the GitHub repository linked above.  For further details see the [Contributing guide](https://github.com/cran-task-views/ctv/blob/main/Contributing.md).
 
