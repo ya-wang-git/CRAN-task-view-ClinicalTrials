@@ -3,7 +3,7 @@ name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, and Analysis
 maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Orla Doyle, Elias Laurin Meyer, Wilmar Igl
 email: ya.wang10@gilead.com
-version: 2025-04-22
+version: 2025-06-12
 source: https://github.com/cran-task-views/ClinicalTrials/
 ---
 
@@ -294,6 +294,8 @@ sizes. Examples from the book are given.
     
 #### *Meta-Analysis*
 
+This task view focuses on packages relevant to clinical trials. For a more comprehensive list of packages on this topic, please refer to the `r view("Meta-analysis")` task view.
+
 -   `r pkg("meta")` is a user-friendly package offering standard meta-analysis methods as described in the book *Meta-Analysis with R* by Schwarzer et al. (2015) <[doi: 10.1007/978-3-319-21416-0](https://doi.org/10.1007/978-3-319-21416-0)>, featuring common and random effects models, various plots (e.g., forest, funnel), advanced models (e.g., three-level, GLMM), bias evaluation, meta-regression, cumulative and leave-one-out analysis, and subgroup forest plot summaries.
     
 -   `r pkg("metafor")` is a comprehensive package for meta-analyses, providing functions to calculate effect sizes, fit various (e.g., fixed-, and random-effects) models, perform moderator/meta-regression analyses, create meta-analytical plots, apply specialized methods (e.g., Mantel-Haenszel method, Peto's method), and fit meta-analytic multivariate/multilevel models accounting for non-independent sampling errors or clustering.
@@ -311,6 +313,8 @@ sizes. Examples from the book are given.
 
 #### *Missing Data Imputation*
 
+This task view focuses on packages relevant to clinical trials. For a more comprehensive list of packages on this topic, please refer to the `r view("MissingData")` task view.
+
 -   `r pkg("mice")` implements multiple imputation by chained equations using Fully Conditional Specification (FCS) implemented by the MICE algorithm as 
 described in Van Buuren and Groothuis-Oudshoorn (2011) <[doi:10.18637/jss.v045.i03](https://doi.org/10.18637/jss.v045.i03)>
 
@@ -320,6 +324,8 @@ described in Van Buuren and Groothuis-Oudshoorn (2011) <[doi:10.18637/jss.v045.i
     
     
 #### *Survival Analysis*
+
+This task view focuses on packages relevant to clinical trials. For a more comprehensive list of packages on this topic, please refer to the `r view("Survival")` task view.
 
 -   `r pkg("ipcwswitch")` contains functions for formatting clinical trials data and implementing inverse probability of censoring weights to handle treatment switches when estimating causal treatment effect in randomized clinical trials.
 
