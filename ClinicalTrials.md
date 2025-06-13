@@ -20,9 +20,19 @@ Packages are grouped in the following categories:
 
 -	[**Analysis**](#analysis): tools for implementing commonly used analysis method in clinical trials. The packages are further categorized into subgroups, such as [*general analysis*](#general-analysis), [*longitudinal data analysis*](#longitudinal-data-analysis), [*survival analysis*](#survival-analysis), [*meta-analysis*](#meta-analysis), [*missing data imputation*](#missing-data-imputation), as well as [*analysis for specific designs*](#other-analysis-for-specific-designs).
 
-Here are several foundational books on clinical trial design and analysis that can help users gain a deeper understanding of the methods implemented in the relevant R packages: [Clinical Trials: A Practical Approach](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118793916), [Fundamentals of Clinical Trials](https://link.springer.com/book/10.1007/978-3-319-18539-2), [Sample Sizes for Clinical Trials](https://www.routledge.com/Sample-Sizes-for-Clinical-Trials/Julious/p/book/9781138587892?srsltid=AfmBOopllJ4lcXrd-J6q76oPSQl3Zae-X7LqAYmh1zbt_BY7_0ZD0gN0), [Group Sequential and Confirmatory Adaptive Designs in Clinical Trials](https://link.springer.com/book/10.1007/978-3-319-32562-0), [Bayesian Adaptive Methods for Clinical Trials](https://www.routledge.com/Bayesian-Adaptive-Methods-for-Clinical-Trials/Berry-Carlin-Lee-Muller/p/book/9781032922058?srsltid=AfmBOopPzoSaPFpQT8vTUc6WmJpn4_sNSQZQntvryGtRPPM6IgySOh7F).
+Here are several foundational books on clinical trial design and analysis that can help users gain a deeper understanding of the methods implemented in the relevant R packages: 
 
-[Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](http://www.R-project.org/doc/R-FDA.pdf): this document outlines the R Foundation's consensus on using R in GxP-regulated environments, providing a framework for end users to comply with internal procedures, documentation needs, and regulatory requirements.
+- *Clinical Trials: A Practical Approach* (Pocock (2013) <[doi:10.1002/9781118793916](https://doi.org/10.1002/9781118793916)>) 
+
+- *Fundamentals of Clinical Trials* (Friedman et al. (2015) <[doi:10.1007/978-3-319-18539-2](https://doi.org/10.1007/978-3-319-18539-2)>)
+
+- *Sample Sizes for Clinical Trials* (Julious (2023) <[doi:10.1201/9780429503658](https://doi.org/10.1201/9780429503658)>)
+
+- *Group Sequential and Confirmatory Adaptive Designs in Clinical Trials* (Wassmer and Brannath (2016) <[doi:10.1007/978-3-319-32562-0](https://doi.org/10.1007/978-3-319-32562-0)>)
+
+- *Bayesian Adaptive Methods for Clinical Trials* (Berry et al. (2010) <[doi:10.1201/EBK1439825488](https://doi.org/10.1201/EBK1439825488)>)
+
+In 2021, the R Foundation for Statistical Computing published the guidance document [*Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)*](http://www.R-project.org/doc/R-FDA.pdf), which outlines its consensus on the use of R in GxP-regulated environments. This document provides a structured framework to help end users align with internal procedures, fulfill documentation requirements, and comply with regulatory standards.
 
 
 ### Inclusion Criteria
