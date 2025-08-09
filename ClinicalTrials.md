@@ -56,15 +56,15 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 -   `r pkg("adpss")` provides the functions for planning and conducting a clinical trial with adaptive sample size determination. Maximal statistical efficiency will be exploited even when dramatic or multiple adaptations are made. 
 
--   `r pkg("asd", priority = "core")`{#asd} runs simulations for adaptive seamless designs with and without early outcomes for treatment selection and subpopulation type designs. It allows sample size modification in subpopulation selection.
+-   `r pkg("asd", priority = "core")` runs simulations for adaptive seamless designs with and without early outcomes for treatment selection and subpopulation type designs. It allows sample size modification in subpopulation selection.
 
 -   `r pkg("ASSISTant")` Clinical trial design for subgroup selection in three-stage group sequential trial as described in Lai et al. (2014) <[doi:10.1016/j.cct.2014.09.001](https://doi.org/10.1016/j.cct.2014.09.001)>. It includes facilities for design, exploration and analysis of such trials.
 
 -   `r pkg("BDP2")` Tools and workflow to choose design parameters in Bayesian adaptive single-arm phase II trial designs with binary endpoint (response, success) with possible stopping for efficacy and futility at interim analyses; and also contains routines to determine and visualize operating characteristics. See Kopp-Schneider et al. (2018) <[doi:10.1002/bimj.201700209](https://doi.org/10.1002/bimj.201700209)>. 
 
--   `r pkg("Cats")` {#Cats} simulates a cohort platform trial design whereby every cohort consists of two arms (control and experimental treatment). Endpoints are co-primary binary endpoints and decisions are made using either Bayesian or frequentist decision rules; and realistic trial trajectories are simulated with the operating characteristics of the designs calculated.
+-   `r pkg("cats")` simulates a cohort platform trial design whereby every cohort consists of two arms (control and experimental treatment). Endpoints are co-primary binary endpoints and decisions are made using either Bayesian or frequentist decision rules; and realistic trial trajectories are simulated with the operating characteristics of the designs calculated.
 
--   `r pkg("CohortPlat")`{#CohortPlat} is a collection of functions dedicated to simulating staggered entry platform trials whereby the treatment under investigation is a combination of two active compounds. A more detailed description of the design can be found in Meyer et al. <[doi:10.1002/pst.2194](https://doi:10.1002/pst.2194)> and a manual in Meyer et al. <[doi:10.48550/arXiv.2202.02182](https://doi:10.48550/arXiv.2202.02182)>.
+-   `r pkg("CohortPlat")` is a collection of functions dedicated to simulating staggered entry platform trials whereby the treatment under investigation is a combination of two active compounds. A more detailed description of the design can be found in Meyer et al. <[doi:10.1002/pst.2194](https://doi:10.1002/pst.2194)> and a manual in Meyer et al. <[doi:10.48550/arXiv.2202.02182](https://doi:10.48550/arXiv.2202.02182)>.
 
 -   `r pkg("esDesign")`{#esDesign} is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) <[doi:10.1016/j.cct.2020.106216](https://doi.org/10.1016/j.cct.2020.106216)>. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR), AED3-SSR (or ES3-SSR); additionally, several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) <[doi:10.1177/1740774513503739](https://doi.org/10.1177/1740774513503739)>, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995).
 
@@ -102,7 +102,7 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 #### *Dose-Finding*
 
--   `r pkg("bcrm", priority = "core")`{#bcrm} This package implements a wide variety of one and two-parameter Bayesian CRM designs. The program can run interactively, allowing the user to enter outcomes after each cohort has been recruited, or via simulation to assess operating characteristics.
+-   `r pkg("bcrm", priority = "core")` This package implements a wide variety of one and two-parameter Bayesian CRM designs. The program can run interactively, allowing the user to enter outcomes after each cohort has been recruited, or via simulation to assess operating characteristics.
 
 -   `r pkg("crmPack")` Implements a wide range of model-based dose escalation designs, ranging from classical and modern continual reassessment methods (CRMs) based on dose-limiting toxicity endpoints to dual-endpoint designs taking into account a biomarker/efficacy outcome. The focus is on Bayesian inference, making it very easy to setup a new design with its own JAGS code.
     
@@ -115,8 +115,6 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 -   `r pkg("OncoBayes2")` Bayesian Logistic Regression for Oncology Dose-Escalation Trials. It provides flexible functions for Bayesian meta-analytic modeling of the incidence of Dose Limiting Toxicities (DLTs) by dose level, under treatment regimes involving any number of combination partners.
 
 -   `r pkg("UnifiedDoseFinding")`{#UnifiedDoseFinding} In many phase I trials, the design goal is to find the dose associated with a certain target toxicity rate, or the goal can be to find the dose with a certain weighted sum of rates of various toxicity grades, or to find the dose with a certain mean value of a continuous response. This package provides the setup and calculations needed to run a dose-finding trial with non-binary endpoints and performs simulations to assess design's operating characteristics under various scenarios.
-    
--   `r pkg("dfped")`{#dfped} A unified method for designing and analysing dose-finding trials in paediatrics, while bridging information from adults, is proposed in the dfped package. The dose range can be calculated under three extrapolation methods: linear, allometry and maturation adjustment, using pharmacokinetic (PK) data, assuming that target exposures are the same in both populations.
     
 -   `r pkg("DoseFinding")` provides functions for the design and analysis of dose-finding experiments (for example pharmaceutical Phase II clinical trials). It provides functions for: multiple contrast tests, fitting non-linear dose-response models, calculating optimal designs and an implementation of the `r pkg("MCPMod")` methodology, but currently only normally distributed homoscedastic endpoints are supported.
 
@@ -227,17 +225,13 @@ sizes. Examples from the book are given.
 
 -   `r pkg("airship")`is an R package that contains an R Shiny App designed to plot simulation results of clinical trials. Its main feature is allowing users to simultaneously investigate the impact of several simulation input dimensions through dynamic filtering of the simulation results. A more detailed description of the core app can be found in Meyer et al. (2023) <[doi:10.1016/j.softx.2023.101347](https://doi.org/10.1016/j.softx.2023.101347)>.
 
--   [`r pkg("asd", priority = "core")`](#asd).
+-   `r pkg("asd", priority = "core")` provides functions to simulate adaptive seamless designs that either (i) compare multiple experimental treatments against a single control group, or (ii) evaluate a single experimental treatment versus a control with co-primary analyses in both a predefined subgroup and the full population.
 
--   [`r pkg("BayesCT")`](BayesCT).
-
--   [`r pkg("bcrm", priority = "core")`](bcrm).
+-   `r pkg("bcrm", priority = "core")` allows users to Simulate multiple trial scenarios to assess operating characteristics and evaluate different Bayesian CRM designs.
     
--   [`r pkg("Cats")`](#Cats).
+-   `r pkg("cats")` Given trial-specific design parameters, this package performs multiple trial simulations and exports the results to an Excel file for further analysis.
     
--   [`r pkg("CohortPlat")`](#CohortPlat). 
-    
--   [`r pkg("dfped")`](#dfped).
+-   `r pkg("CohortPlat")` is designed to simulate cohort-based platform trials that evaluate combination therapies involving two active compounds. 
     
 -   [`r pkg("esDesign")`](#esDesign).   
 
@@ -359,8 +353,6 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 
 -   `r pkg("accrualPlot")` Tracking accrual in clinical trials is important for trial success. `accrualPlot` provides functions to aid the tracking of accrual and predict when a trial will reach it's intended sample size.
     
--   [`r pkg("asd", priority = "core")`](#asd).
-
 -   [`r pkg("esDesign")`](#esDesign).
 
 -   `r pkg("monitOS")` Monitoring Overall Survival in Pivotal Trials in Indolent Cancers.
