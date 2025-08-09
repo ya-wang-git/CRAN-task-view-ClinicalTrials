@@ -3,7 +3,7 @@ name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, and Analysis
 maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Orla Doyle, Elias Laurin Meyer, Wilmar Igl
 email: ya.wang10@gilead.com
-version: 2025-06-12
+version: 2025-08-08
 source: https://github.com/cran-task-views/ClinicalTrials/
 ---
 
@@ -80,11 +80,11 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 -   `r pkg("MAMS")` designs multi-arm multi-stage studies with (asymptotically) normal endpoints and known variance. It could be used to determine the boundaries of a multi-arm multi-stage study for a given boundary shape and finds the required number of subjects, as well as simulates multi-arm multi-stage designs and estimates power and expected sample size. 
 
--   `r pkg("MinEDfind")`{#MinEDfind} The nonparametric two-stage Bayesian adaptive design is a novel phase II clinical trial design for finding the minimum effective dose (MinED) in single-agent trials. This design is motivated by the top priority and concern of clinicians when testing a new drug, which is to effectively treat patients and minimize the chance of exposing them to subtherapeutic or overly toxic doses. 
+-   `r pkg("MinEDfind")` The nonparametric two-stage Bayesian adaptive design is a novel phase II clinical trial design for finding the minimum effective dose (MinED) in single-agent trials. This design is motivated by the top priority and concern of clinicians when testing a new drug, which is to effectively treat patients and minimize the chance of exposing them to subtherapeutic or overly toxic doses. 
 
 -   `r pkg("NCC")`{#NCC} is an R package that allows users to simulate platform trials and perform treatment–control comparisons using non-concurrent control data (Krotka et al. (2023) <[doi:10.1016/j.softx.2023.101437](https://doi.org/10.1016/j.softx.2023.101437)>). The package supports simulation of complex platform trial designs with continuous or binary endpoints and a flexible number of treatment arms that enter the trial at different time points and accommodates different treatment effects among the arms and includes several patterns for time trends using frequentist approach (e.g., regression model adjusting for time as a fixed effect mixed model adjusting for time as a random factor, and regression splines), the Bayesian time machine a meta-analytic predictive prior separate analysis, and pooled analysis.
 
--   `r pkg("rpact", priority = "core")`{#rpact} Design and analysis of confirmatory adaptive clinical trials with continuous, binary, and survival endpoints according to the methods described in the monograph by Wassmer and Brannath (2016). This includes classical group sequential as well as multi-stage adaptive hypotheses tests that are based on the combination testing principle.
+-   `r pkg("rpact", priority = "core")` Design and analysis of confirmatory adaptive clinical trials with continuous, binary, and survival endpoints according to the methods described in the monograph by Wassmer and Brannath (2016). This includes classical group sequential as well as multi-stage adaptive hypotheses tests that are based on the combination testing principle.
 
 -   `r pkg("SAME")`{#SAME} Design a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation. Wason et al. (2015) <[doi:10.1038/bjc.2015.278](https://doi.org/10.1038/bjc.2015.278)>. Yin et al. (2018) <[doi:10.1007/s12561-017-9199-7](https://doi.org/10.1007/s12561-017-9199-7)>. Yuan et al. (2016) <[doi:10.1002/sim.6971](https://doi.org/10.1002/sim.6971)>.
 
@@ -95,7 +95,7 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 -   `r pkg("PK")` contains methods to estimate PK parameters using non-compartmental theory and provides facilities to obtain confidence intervals and perform tests for single analysis as well as bioequivalence studies.
 
--   `r pkg("PowerTOST", priority = "core")`{#PowerTOST} contains functions to calculate power and sample size for various study designs used for bioequivalence studies. See function known.designs() for study designs covered. 
+-   `r pkg("PowerTOST", priority = "core")` is a specialized R package designed to support the planning and evaluation of bioequivalence studies. It offers a comprehensive set of functions for calculating statistical power, sample size, and confidence intervals across a wide range of study designs.
 
 -   `r pkg("replicateBE")` Performs comparative bioavailability calculations for Average Bioequivalence with Expanding Limits (ABEL). Implemented are 'Method A' and 'Method B' and the detection of outliers.
     
@@ -133,7 +133,7 @@ the MCP-Mod methodology will be done in `r pkg("DoseFinding")`.
 
 -   `r pkg("SEARS")` A seamless design that combines phase I dose escalation based on toxicity with phase II dose expansion and dose comparison based on efficacy. A rich set of parameters can be used to explore various real scenarios. It can generate operating characteristics via simulation to examine the design's property.
 
--   [`r pkg("MinEDfind")`](#MinEDfind).
+-   `r pkg("MinEDfind")` supports dose determination for upcoming patient cohort in single-agent trials designed to identify the minimum effective dose.
     
 -   `r pkg("dfmta")` Phase I/II adaptive dose-finding design for single-agent Molecularly Targeted Agent (MTA), according to the paper "Phase I/II Dose-Finding Design for Molecularly Targeted Agent: Plateau Determination using Adaptive Randomization", Riviere Marie-Karelle et al. (2016) <[doi:10.1177/0962280216631763](https://doi.org/10.1177/0962280216631763)>.
 
@@ -149,7 +149,7 @@ the MCP-Mod methodology will be done in `r pkg("DoseFinding")`.
 
 #### *Group Sequential Designs*
     
--   `r pkg("clinfun", priority = "core")`{#clinfun} has functions for both design and analysis of clinical trials. For phase II trials, it has functions to calculate sample size, effect size, and power based on Fisher's exact test, the operating characteristics of a two-stage boundary, Optimal and Minimax 2-stage Phase II designs given by Richard Simon, the exact 1-stage Phase II design and can compute a stopping rule and its operating characteristics for toxicity monitoring based repeated significance testing; and can calculate sample size for Phase III group sequential designs.    
+-   `r pkg("clinfun", priority = "core")` has functions for both design and analysis of clinical trials. For phase II trials, it has functions to calculate sample size, effect size, and power based on Fisher's exact test, the operating characteristics of a two-stage boundary, Optimal and Minimax 2-stage Phase II designs given by Richard Simon, the exact 1-stage Phase II design and can compute a stopping rule and its operating characteristics for toxicity monitoring based repeated significance testing; and can calculate sample size for Phase III group sequential designs.    
     
 -   `r pkg("GroupSeq")` computes probabilities related to group sequential designs for normally distributed test statistics. Enables to derive critical boundaries, power, drift, and confidence intervals of such designs. Supports the alpha spending approach by Lan-DeMets (1994) <[doi:10.1002/sim.4780131308](https://doi.org/10.1002/sim.4780131308)>.  
 
@@ -157,9 +157,9 @@ the MCP-Mod methodology will be done in `r pkg("DoseFinding")`.
 
 -   `r pkg("ldbounds", priority = "core")` uses Lan-DeMets Method for group sequential trial; its functions calculate bounds and probabilities of a group sequential trial.
 
--   `r pkg("lrstat")`{#lrstat} performs power and sample size calculation for non-proportional hazards model using the Fleming-Harrington family of weighted log-rank tests. The package can also be used for continuous, binary, and count data. 
+-   `r pkg("lrstat")` enables the design of adaptive group sequential trials, allowing flexibility in sample size adjustments, error spending functions, and the number and timing of interim analyses. It also supports a range of methods for adjusted p-values, including graphical approaches and gatekeeping procedures.
 
--   [`r pkg("rpact", priority = "core")`](#rpact).
+-   `r pkg("rpact", priority = "core")` is a comprehensive validated R package for clinical research which enables the design and analysis of confirmatory adaptive group sequential designs with continuous, binary, and survival endpoints.
 
 
 #### *Randomization*
@@ -195,15 +195,15 @@ a PDF file of randomization cards.
 
 -   `r pkg("BayesCTDesign")` A set of functions to help clinical trial researchers calculate power and sample size for two-arm Bayesian randomized clinical trials that do or do not incorporate historical control data.  Outcomes considered are Gaussian, Poisson, Bernoulli, Lognormal, Weibull, and Piecewise Exponential. The methods are described in Eggleston et al. (2021) <[doi:10.18637/jss.v100.i21](https://doi.org/10.18637/jss.v100.i21)>. 
     
--   [`r pkg("clinfun", priority = "core")`](#clinfun). 
+-   `r pkg("clinfun", priority = "core")` provides functions to determine sample sizes, effect sizes, and power based on Fisher’s exact tests, as well as functions to calculate the power of rank tests for animal studies. 
     
 -   `r pkg("cosa")` Implements bound constrained optimal sample allocation (BCOSA) framework described in Bulus & Dong (2019) for power analysis of multilevel regression discontinuity designs (MRDDs) and multilevel randomized trials (MRTs) with continuous outcomes. Separate tools for statistical power and minimum detectable effect size computations are provided.
     
 -   `r pkg("longpower", priority = "core")`Compute power and sample size for linear models of longitudinal data. Supported models include mixed-effects models and models fit by generalized least squares and generalized estimating equations. The package is described in Iddi and Donohue (2022) <[doi:10.32614/RJ-2022-022](https://journal.r-project.org/articles/RJ-2022-022/)>. 
     
--   [`r pkg("lrstat")`](#lrstat).
+-   `r pkg("lrstat")` performs power and sample size calculation for non-proportional hazards model using the Fleming-Harrington family of weighted log-rank tests.
     
--   [`r pkg("PowerTOST", priority = "core")`](#PowerTOST).
+-   `r pkg("PowerTOST", priority = "core")` contains functions to calculate power and sample size for various study designs used in bioequivalence studies. Power and sample size can be obtained based on different methods, amongst them prominently the TOST procedure (two one-sided t-tests).
     
 -   `r pkg("PowerUpR")` Includes tools to calculate statistical power, minimum detectable effect size (MDES), MDES difference (MDESD), and minimum required sample size for various multilevel randomized experiments with continuous outcomes. Some of the functions can assist with planning two- and three-level cluster-randomized trials (CRTs) sensitive to multilevel moderation and mediation (2-1-1, 2-2-1, and 3-2-1).
     
@@ -211,6 +211,8 @@ a PDF file of randomization cards.
 
 -   `r pkg("pwr", priority = "core")` Power calculations along the lines of Cohen (1988) using in particular the same notations for effect
 sizes. Examples from the book are given.
+
+-   `r pkg("rpact", priority = "core")` provides sample size and power calculations for a range of endpoints, including: means (continuous endpoint), rates (binary endpoint), survival trials with flexible recruitment and survival time options, and count data.
     
 -   `r pkg("samplesize")` computes sample size for Student's t-test with equal and nonequal variances and for the Wilcoxon-Mann-Whitney test for categorical data with and without ties.
     
@@ -247,7 +249,7 @@ sizes. Examples from the book are given.
 
 -   [`r pkg("RABR")`](#RABR).
 
--   [`r pkg("rpact", priority = "core")`](#rpact).
+-   `r pkg("rpact", priority = "core")` provides simulation tools for means, rates, survival data, and count data, enabling the evaluation of adaptive sample size or event number recalculations based on conditional power, as well as the assessment of treatment selection strategies in multi-arm trials.
 
 -   `r pkg("simglm")` Simulates regression models, including both simple regression and generalized linear mixed models with up to three level of nesting. Power simulations that are flexible allowing the specification of missing data, unbalanced designs, and different random error distributions are built into the package.
 
@@ -337,8 +339,6 @@ This task view focuses on packages relevant to clinical trials. For a more compr
     
 -   `r pkg("survival", priority = "core")` contains descriptive statistics, two-sample tests, parametric accelerated failure models, Cox model. Delayed entry (truncation) allowed for all models; interval censoring for parametric models. Case-cohort designs.
   
--   [`r pkg("rpact", priority = "core")`](#rpact).
-
     
 #### *Other Analysis for Specific Designs*  
 
@@ -367,7 +367,7 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 
 -   `r pkg("PwrGSD")` provides tools for the evaluation of interim analysis plans for sequentially monitored trials on a survival endpoint; tools to construct efficacy and futility boundaries, for deriving power of a sequential design at a specified alternative, template for evaluating the performance of candidate plans at a set of time varying alternatives.
 
--   [`r pkg("rpact", priority = "core")`](#rpact).
+-   `r pkg("rpact", priority = "core")` enables automatic boundary recalculations during a trial using the alpha spending approach, accommodating both under-running and over-running scenarios.
 
 -   [`r pkg("SAME")`](#SAME).
 
