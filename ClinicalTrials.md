@@ -66,7 +66,7 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 -   `r pkg("CohortPlat")` is a collection of functions dedicated to simulating staggered entry platform trials whereby the treatment under investigation is a combination of two active compounds. A more detailed description of the design can be found in Meyer et al. <[doi:10.1002/pst.2194](https://doi:10.1002/pst.2194)> and a manual in Meyer et al. <[doi:10.48550/arXiv.2202.02182](https://doi:10.48550/arXiv.2202.02182)>.
 
--   `r pkg("esDesign")`{#esDesign} is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) <[doi:10.1016/j.cct.2020.106216](https://doi.org/10.1016/j.cct.2020.106216)>. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR), AED3-SSR (or ES3-SSR); additionally, several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) <[doi:10.1177/1740774513503739](https://doi.org/10.1177/1740774513503739)>, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995).
+-   `r pkg("esDesign")` is developed to implement the adaptive enrichment designs with sample size re-estimation presented in Lin et al. (2021) <[doi:10.1016/j.cct.2020.106216](https://doi.org/10.1016/j.cct.2020.106216)>. In details, three-proposed trial designs are provided, including the AED1-SSR (or ES1-SSR), AED2-SSR (or ES2-SSR), AED3-SSR (or ES3-SSR); additionally, several widely used adaptive designs, such as the Marker Sequential Test (MaST) design proposed Freidlin et al. (2014) <[doi:10.1177/1740774513503739](https://doi.org/10.1177/1740774513503739)>, the adaptive enrichment designs without early stopping (AED or ES), the sample size re-estimation procedure (SSR) based on the conditional power proposed by Proschan and Hunsberger (1995).
 
 -   `r pkg("eselect")` Endpoint selection and sample size reassessment for multiple binary endpoints based on blinded and/or unblinded data.  The implemented design is proposed in Roig et al. (2022) <[doi:10.48550/arXiv.2206.09639](https://doi.org/10.48550/arXiv.2206.09639)>.
 
@@ -82,11 +82,11 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 -   `r pkg("MinEDfind")` The nonparametric two-stage Bayesian adaptive design is a novel phase II clinical trial design for finding the minimum effective dose (MinED) in single-agent trials. This design is motivated by the top priority and concern of clinicians when testing a new drug, which is to effectively treat patients and minimize the chance of exposing them to subtherapeutic or overly toxic doses. 
 
--   `r pkg("NCC")`{#NCC} is an R package that allows users to simulate platform trials and perform treatment–control comparisons using non-concurrent control data (Krotka et al. (2023) <[doi:10.1016/j.softx.2023.101437](https://doi.org/10.1016/j.softx.2023.101437)>). The package supports simulation of complex platform trial designs with continuous or binary endpoints and a flexible number of treatment arms that enter the trial at different time points and accommodates different treatment effects among the arms and includes several patterns for time trends using frequentist approach (e.g., regression model adjusting for time as a fixed effect mixed model adjusting for time as a random factor, and regression splines), the Bayesian time machine a meta-analytic predictive prior separate analysis, and pooled analysis.
+-   `r pkg("NCC")` supports the design and analysis of flexible platform trials with non-concurrent controls. Functions for data generation, analysis, visualization and running simulation studies are provided. The implemented analysis methods are described in: Bofill Roig et al. (2022) <doi:10.1186/s12874-022-01683-w>, Saville et al. (2022) <doi:10.1177/17407745221112013> and Schmidli et al. (2014) <doi:10.1111/biom.12242>.
 
 -   `r pkg("rpact", priority = "core")` Design and analysis of confirmatory adaptive clinical trials with continuous, binary, and survival endpoints according to the methods described in the monograph by Wassmer and Brannath (2016). This includes classical group sequential as well as multi-stage adaptive hypotheses tests that are based on the combination testing principle.
 
--   `r pkg("SAME")`{#SAME} Design a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation. Wason et al. (2015) <[doi:10.1038/bjc.2015.278](https://doi.org/10.1038/bjc.2015.278)>. Yin et al. (2018) <[doi:10.1007/s12561-017-9199-7](https://doi.org/10.1007/s12561-017-9199-7)>. Yuan et al. (2016) <[doi:10.1002/sim.6971](https://doi.org/10.1002/sim.6971)>.
+-   `r pkg("SAME")` allows design of a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation. Wason et al. (2015) <[doi:10.1038/bjc.2015.278](https://doi.org/10.1038/bjc.2015.278)>. Yin et al. (2018) <[doi:10.1007/s12561-017-9199-7](https://doi.org/10.1007/s12561-017-9199-7)>. Yuan et al. (2016) <[doi:10.1002/sim.6971](https://doi.org/10.1002/sim.6971)>.
 
 
 #### *Bioequivalence*
@@ -110,12 +110,12 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
     
 -   `r pkg("DTAT")` Dose Titration Algorithm Tuning (DTAT) is a methodologic framework allowing dose individualization to be conceived as a continuous learning process that begins in early-phase clinical trials and continues throughout drug development, on into clinical practice. This package includes code that researchers may use to reproduce or extend key results of the DTAT research programme, plus tools for trialists to design and simulate a '3+3/PC' dose-finding study.
     
--   `r pkg("ewoc")`{#ewoc} An implementation of a variety of escalation with overdose control designs introduced by Babb et al. (1998) <[doi:10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9](https://dx.doi.org/10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9)>. It calculates the next dose as a clinical trial proceeds as well as performs simulations to obtain operating characteristics.    
+-   `r pkg("ewoc")` An implementation of a variety of escalation with overdose control designs introduced by Babb et al. (1998) <[doi:10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9](https://dx.doi.org/10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9)>. It calculates the next dose as a clinical trial proceeds as well as performs simulations to obtain operating characteristics.    
     
 -   `r pkg("OncoBayes2")` Bayesian Logistic Regression for Oncology Dose-Escalation Trials. It provides flexible functions for Bayesian meta-analytic modeling of the incidence of Dose Limiting Toxicities (DLTs) by dose level, under treatment regimes involving any number of combination partners.
 
--   `r pkg("UnifiedDoseFinding")`{#UnifiedDoseFinding} In many phase I trials, the design goal is to find the dose associated with a certain target toxicity rate, or the goal can be to find the dose with a certain weighted sum of rates of various toxicity grades, or to find the dose with a certain mean value of a continuous response. This package provides the setup and calculations needed to run a dose-finding trial with non-binary endpoints and performs simulations to assess design's operating characteristics under various scenarios.
-    
+-   `r pkg("UnifiedDoseFinding")` includes three dose finding designs: unified phase I design (Ivanova et al. (2009) <doi:10.1111/j.1541-0420.2008.01045.x>), Quasi-CRM/Robust-Quasi-CRM (Yuan et al. (2007)<doi:10.1111/j.1541-0420.2006.00666.x>, Pan et al. (2014) <doi:10.1371/journal.pone.0098147>) and generalized BOIN design (Mu et al. (2018)<doi:10.1111/rssc.12263>).  The design goal can include finding the dose associated with a certain target toxicity rate, or the goal can be to find the dose with a certain weighted sum of rates of various toxicity grades, or to find the dose with a certain mean value of a continuous response.
+
 -   `r pkg("DoseFinding")` provides functions for the design and analysis of dose-finding experiments (for example pharmaceutical Phase II clinical trials). It provides functions for: multiple contrast tests, fitting non-linear dose-response models, calculating optimal designs and an implementation of the `r pkg("MCPMod")` methodology, but currently only normally distributed homoscedastic endpoints are supported.
 
 -   `r pkg("pocrm")` implements functions to implement and simulate the partial order continual reassessment method (PO-CRM) for use in Phase I trials of combinations of agents.
@@ -184,7 +184,7 @@ a PDF file of randomization cards.
 
 -   `r pkg("grouprar")` implements group response-adaptive randomization procedures, which also integrates standard non-group response-adaptive randomization methods as specialized instances. It is also uniquely capable of managing complex scenarios, including those with delayed and missing responses, thereby expanding its utility in real-world applications. 
 
--   `r pkg("RABR")`{#RABR} conduct simulations of the Response Adaptive Block Randomization (RABR) design to evaluate its type I error rate, power and operating characteristics for binary and continuous endpoints. For more details of the proposed method, please refer to Zhan et al. (2021) <[doi:10.1002/sim.9104](https://doi.org/10.1002/sim.9104)>.
+-   `r pkg("RABR")` supports Response Adaptive Block Randomization (RABR) design through simulations to evaluate its type I error rate, power and operating characteristics for binary and continuous endpoints. For more details of the proposed method, please refer to Zhan et al. (2021) <doi:10.1002/sim.9104>.
 
 -   `r pkg("RARfreq")` provides functions and command-line user interface to generate allocation sequence by response-adaptive randomization for clinical trials. The package currently supports two families of frequentist response-adaptive randomization procedures, Doubly Adaptive Biased Coin Design ('DBCD') and Sequential Estimation-adjusted Urn Model ('SEU'), for binary and normal endpoints.
 
@@ -233,21 +233,21 @@ sizes. Examples from the book are given.
     
 -   `r pkg("CohortPlat")` is designed to simulate cohort-based platform trials that evaluate combination therapies involving two active compounds. 
     
--   [`r pkg("esDesign")`](#esDesign).   
+-   `r pkg("esDesign")` is developed to implement adaptive enrichment designs.  esDesign functions to conduct simulation studies of adaptive enrichment designs include the following strategies:  without early stopping boundary; with sample size re-estimation procedure; with Sample Size Re-estimation Procedure based on Futility and Efficacy Stopping Boundaries for the continuous endpoint.  Simulation studies can also be conducted for these additional designs: Marker Sequential Test design; standard design; sample size re-estimation procedure..   
 
--   [`r pkg("ewoc")`](#ewoc). 
+-   `r pkg("ewoc")` performs simulations to obtain operating characteristics for dose escalation overdose control designs for phase I clinical trials such that the probability of overdose is controlled explicitly.   The design was first introduced by Babb et al. (1998) <doi:10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9>. 
 
--   `r pkg("Mediana")` Provides a general framework for clinical trial simulations based on the Clinical Scenario Evaluation (CSE) approach. The package supports a broad class of data models (including clinical trials with continuous, binary, survival-type and count-type endpoints as well as multivariate outcomes that are based on combinations of different endpoints), analysis strategies and commonly used evaluation criteria.
+-   `r pkg("Mediana")` provides a general framework for clinical trial simulations based on the Clinical Scenario Evaluation (CSE) approach. The package supports a broad class of data models (including clinical trials with continuous, binary, survival-type and count-type endpoints as well as multivariate outcomes that are based on combinations of different endpoints), analysis strategies and commonly used evaluation criteria.
 
--   [`r pkg("NCC")`](#NCC).
+-   `r pkg("NCC")` is an R package that allows users to simulate platform trials and perform treatment–control comparisons using non-concurrent control data (Krotka et al. (2023) <doi:10.1016/j.softx.2023.101437>). The package supports simulation of complex platform trial designs with continuous or binary endpoints and a flexible number of treatment arms that enter the trial at different time points and accommodates different treatment effects among the arms and includes several patterns for time trends using frequentist approach (e.g., regression model adjusting for time as a fixed effect mixed model adjusting for time as a random factor, and regression splines), the Bayesian time machine a meta-analytic predictive prior separate analysis, and pooled analysis.
 
--   [`r pkg("RABR")`](#RABR).
+-   `r pkg("RABR")` conducts simulations of the Response Adaptive Block Randomization (RABR) design to evaluate its type I error rate, power and operating characteristics for binary and continuous endpoints. For more details of the proposed method, please refer to Zhan et al. (2021) <doi:10.1002/sim.9104>.
 
 -   `r pkg("rpact", priority = "core")` provides simulation tools for means, rates, survival data, and count data, enabling the evaluation of adaptive sample size or event number recalculations based on conditional power, as well as the assessment of treatment selection strategies in multi-arm trials.
 
 -   `r pkg("simglm")` Simulates regression models, including both simple regression and generalized linear mixed models with up to three level of nesting. Power simulations that are flexible allowing the specification of missing data, unbalanced designs, and different random error distributions are built into the package.
 
--   [`r pkg("UnifiedDoseFinding")`](#UnifiedDoseFinding).
+-   `r pkg("UnifiedDoseFinding")` provides the setup and calculations needed to run a dose-finding trial with non-binary endpoints and performs simulations to assess design's operating characteristics under various scenarios.  Three dose finding designs are included in this package: unified phase I design (Ivanova et al. (2009) <doi:10.1111/j.1541-0420.2008.01045.x>), Quasi-CRM/Robust-Quasi-CRM (Yuan et al. (2007)<doi:10.1111/j.1541-0420.2006.00666.x>, Pan et al. (2014) <doi:10.1371/journal.pone.0098147>) and generalized BOIN design (Mu et al. (2018)<doi:10.1111/rssc.12263>).
 
 
 ### Analysis
@@ -266,7 +266,7 @@ sizes. Examples from the book are given.
 
 -   `r pkg("maic")` In MAIC, unbiased comparison between outcomes of two trials is facilitated by weighting the subject-level outcomes of one trial with weights derived such that the weighted aggregate measures of the prognostic or effect modifying variables are equal to those of the sample in the comparator trial.
 
--   `r pkg("multcomp")`{#multcomp} covers simultaneous tests and confidence intervals for general linear hypotheses in parametric models, including linear, generalized linear, linear mixed effects, and survival models.
+-   `r pkg("multcomp")` covers simultaneous tests and confidence intervals for general linear hypotheses in parametric models, including linear, generalized linear, linear mixed effects, and survival models.
 
 -   Base R, especially the `r pkg("stats")` package, has a lot of functionality useful for design and analysis of clinical trials. For example, `chisq.test`, `prop.test`, `binom.test`, `t.test`, `wilcox.test`, `kruskal.test`, `mcnemar.test`, `cor.test`, `power.t.test`, `power.prop.test`, `power.anova.test`, `lm`, `glm`, `nls`, `anova` (and its `lm` and `glm` methods) among many others.
     
@@ -283,7 +283,7 @@ sizes. Examples from the book are given.
 
 -   `r pkg("mmrm")` Implements mixed models for repeated measures (MMRM), a popular choice for analyzing longitudinal continuous outcomes in randomized clinical trials and beyond.
 
--   [`r pkg("multcomp")`](#multcomp).
+-   `r pkg("multcomp")` covers simultaneous tests and confidence intervals for general linear hypotheses in parametric models, including linear, generalized linear, linear mixed effects, and survival models.
     
 -   `r pkg("nlme")` fits and compare Gaussian linear and nonlinear mixed-effects models.
     
@@ -325,7 +325,7 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 
 -   `r pkg("ipcwswitch")` contains functions for formatting clinical trials data and implementing inverse probability of censoring weights to handle treatment switches when estimating causal treatment effect in randomized clinical trials.
 
--   [`r pkg("multcomp")`](#multcomp).
+-    `r pkg("multcomp")`allows simultaneous inference on general linear hypotheses within a parametric model, such as a Cox proportional hazards model or a parametric survival model.
 
 -   `r pkg("nphRCT")` Non-Proportional Hazards in Randomized Controlled Trials. Perform a stratified weighted log-rank test in a randomized controlled trial.
 
@@ -353,7 +353,7 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 
 -   `r pkg("accrualPlot")` Tracking accrual in clinical trials is important for trial success. `accrualPlot` provides functions to aid the tracking of accrual and predict when a trial will reach it's intended sample size.
     
--   [`r pkg("esDesign")`](#esDesign).
+-   `r pkg("esDesign")` provides tools to monitor adaptive enrichment designs.  Users can calculate the futility and/or efficacy stopping boundaries, the sample size required, calibrate the value of the threshold of the difference between subgroup-specific test statistics.
 
 -   `r pkg("monitOS")` Monitoring Overall Survival in Pivotal Trials in Indolent Cancers.
 
@@ -361,7 +361,7 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 
 -   `r pkg("rpact", priority = "core")` enables automatic boundary recalculations during a trial using the alpha spending approach, accommodating both under-running and over-running scenarios.
 
--   [`r pkg("SAME")`](#SAME).
+-   `r pkg("SAME")` allows monitoring of a Bayesian seamless multi-arm biomarker-enriched phase II/III design with the survival endpoint with allowing sample size re-estimation. Wason et al. (2015) <doi:10.1038/bjc.2015.278>. Yin et al. (2018) <doi:10.1007/s12561-017-9199-7>. Yuan et al. (2016) <doi:10.1002/sim.6971>.
 
 -   `r pkg("seqmon")` provides sequential monitoring of clinical trials. It calculates the efficacy and futility boundaries at each look. It allows modifying the design and tracking the design update history.
 
