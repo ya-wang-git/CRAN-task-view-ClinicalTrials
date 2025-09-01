@@ -3,7 +3,7 @@ name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, and Analysis
 maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Orla Doyle, Elias Laurin Meyer, Wilmar Igl
 email: ya.wang10@gilead.com
-version: 2025-08-08
+version: 2025-08-29
 source: https://github.com/cran-task-views/ClinicalTrials/
 ---
 
